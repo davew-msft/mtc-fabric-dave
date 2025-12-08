@@ -1,0 +1,32 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Dataflow 3",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "Sheet1": {
+      "queryId": "619921f9-d413-42f3-953e-15a695e1eae6",
+      "queryName": "Sheet1",
+      "loadEnabled": false
+    },
+    "Sheet1_DataDestination": {
+      "queryId": "309d4b62-0130-47cf-bb74-a56f7b3235f4",
+      "queryName": "Sheet1_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://onemtc-my.sharepoint.com/personal/davewen_onemtc_net/",
+      "kind": "Web",
+      "connectionId": "{\"ClusterId\":\"f45d97db-09cb-47bf-ad34-c86ee19504a1\",\"DatasourceId\":\"f850aa1a-2c62-4c31-bfc3-3813e41a6f2b\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"f45d97db-09cb-47bf-ad34-c86ee19504a1\",\"DatasourceId\":\"5e1072a7-12ed-42db-aeaf-b01c471c9a37\"}"
+    }
+  ]
+}

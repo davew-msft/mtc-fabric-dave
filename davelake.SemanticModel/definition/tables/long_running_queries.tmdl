@@ -1,0 +1,93 @@
+table long_running_queries
+	lineageTag: 979f1c9d-18aa-49e0-8150-f6e44136d7cf
+	sourceLineageTag: [queryinsights].[long_running_queries]
+
+	column median_total_elapsed_time_ms
+		dataType: double
+		lineageTag: 3ee3a1b7-fb46-4607-8cde-2dcbc6e03261
+		sourceLineageTag: median_total_elapsed_time_ms
+		summarizeBy: sum
+		sourceColumn: median_total_elapsed_time_ms
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column last_run_total_elapsed_time_ms
+		dataType: int64
+		formatString: 0
+		lineageTag: ba919724-bef8-4dd6-9fe1-92e160091837
+		sourceLineageTag: last_run_total_elapsed_time_ms
+		summarizeBy: sum
+		sourceColumn: last_run_total_elapsed_time_ms
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_run_start_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d19eda37-514c-4062-b633-5e220b11e2da
+		sourceLineageTag: last_run_start_time
+		summarizeBy: none
+		sourceColumn: last_run_start_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_run_session_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 007cb652-90a0-41df-8ab5-a15baa642654
+		sourceLineageTag: last_run_session_id
+		summarizeBy: sum
+		sourceColumn: last_run_session_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column number_of_runs
+		dataType: int64
+		formatString: 0
+		lineageTag: d61be6f2-03c5-49bc-ac64-5c031582fe52
+		sourceLineageTag: number_of_runs
+		summarizeBy: sum
+		sourceColumn: number_of_runs
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_run_command
+		dataType: string
+		lineageTag: 8a0bd0db-58c7-42c1-a954-ea39c6af5984
+		sourceLineageTag: last_run_command
+		summarizeBy: none
+		sourceColumn: last_run_command
+
+		annotation SummarizationSetBy = Automatic
+
+	column query_hash
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 067b4953-07ce-420d-bc5f-eefba0c35cf0
+		sourceLineageTag: query_hash
+		summarizeBy: none
+		sourceColumn: query_hash
+
+		annotation SummarizationSetBy = Automatic
+
+	column database_name
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 50e1d502-48c4-4ea8-9345-511b841ed1c0
+		sourceLineageTag: database_name
+		summarizeBy: none
+		sourceColumn: database_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition long_running_queries-4256d980-47db-4ba4-8682-1e266499f590 = entity
+		mode: directLake
+		source
+			entityName: long_running_queries
+			schemaName: queryinsights
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

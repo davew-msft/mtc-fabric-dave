@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "phillystats-sqldb"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d7e95984-7d8b-b934-40ad-01572f143b9d"
+  }
+}

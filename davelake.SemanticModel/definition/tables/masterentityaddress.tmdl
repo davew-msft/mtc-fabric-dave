@@ -1,0 +1,63 @@
+table masterentityaddress
+	lineageTag: f2813478-0b99-4ef3-942e-824ef46295f5
+	sourceLineageTag: [dbo].[masterentityaddress]
+
+	column masterEntityAddressID
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 14774591-1c01-4391-b24f-cc9ed360bb83
+		sourceLineageTag: masterEntityAddressID
+		summarizeBy: none
+		sourceColumn: masterEntityAddressID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MasterEntityID
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4b4671da-8dc5-42ad-a635-2e9a81f67f28
+		sourceLineageTag: MasterEntityID
+		summarizeBy: none
+		sourceColumn: MasterEntityID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MasterAddressID
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 576161e3-9f65-4a50-8d1e-9529375e10a6
+		sourceLineageTag: MasterAddressID
+		summarizeBy: none
+		sourceColumn: MasterAddressID
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_number
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 88c38c91-f145-490d-896a-200b14747db7
+		sourceLineageTag: parcel_number
+		summarizeBy: none
+		sourceColumn: parcel_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column Notes
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 930f43ab-d7a3-4d87-8a21-3ac13308422a
+		sourceLineageTag: Notes
+		summarizeBy: none
+		sourceColumn: Notes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition masterentityaddress-811a98c1-af77-4837-829d-2bb3176f6960 = entity
+		mode: directLake
+		source
+			entityName: masterentityaddress
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

@@ -1,0 +1,953 @@
+table philly_opa_properties_public_pde
+	lineageTag: 368f99bd-5e58-421a-9b9c-d4cb98f77043
+	sourceLineageTag: [dbo].[philly_opa_properties_public_pde]
+
+	column address_std
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a6e486c3-01ed-4de2-8719-57f983ac6a18
+		sourceLineageTag: address_std
+		summarizeBy: none
+		sourceColumn: address_std
+
+		annotation SummarizationSetBy = Automatic
+
+	column assessment_date
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 9e8e8098-4eb8-4f57-a54f-785c08975efa
+		sourceLineageTag: assessment_date
+		summarizeBy: none
+		sourceColumn: assessment_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column basements
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 5691244c-30eb-4346-affc-c83bf61aec7d
+		sourceLineageTag: basements
+		summarizeBy: none
+		sourceColumn: basements
+
+		annotation SummarizationSetBy = Automatic
+
+	column beginning_point
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 12c113c1-e7fb-413f-b1ed-0b79bb721b98
+		sourceLineageTag: beginning_point
+		summarizeBy: none
+		sourceColumn: beginning_point
+
+		annotation SummarizationSetBy = Automatic
+
+	column book_and_page
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: b5be4823-a9e4-4e0f-846d-69901aec3731
+		sourceLineageTag: book_and_page
+		summarizeBy: none
+		sourceColumn: book_and_page
+
+		annotation SummarizationSetBy = Automatic
+
+	column building_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 09450c9d-44e2-4ebf-a870-6be8be7b0a3e
+		sourceLineageTag: building_code
+		summarizeBy: none
+		sourceColumn: building_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column building_code_description
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0dc1dcce-09d9-4835-a68e-5b56deba0ca3
+		sourceLineageTag: building_code_description
+		summarizeBy: none
+		sourceColumn: building_code_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column building_code_description_new
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c3b1c259-a84d-4995-95ad-a585a1a4a48b
+		sourceLineageTag: building_code_description_new
+		summarizeBy: none
+		sourceColumn: building_code_description_new
+
+		annotation SummarizationSetBy = Automatic
+
+	column building_code_new
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2d47b015-cf51-40a6-81ce-4dd464f386ed
+		sourceLineageTag: building_code_new
+		summarizeBy: none
+		sourceColumn: building_code_new
+
+		annotation SummarizationSetBy = Automatic
+
+	column cartodb_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 75c73f14-58cf-460f-9121-b4e4d657acce
+		sourceLineageTag: cartodb_id
+		summarizeBy: sum
+		sourceColumn: cartodb_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column category_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 8de8441d-2d0e-4d33-8978-5237f275919e
+		sourceLineageTag: category_code
+		summarizeBy: none
+		sourceColumn: category_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column category_code_description
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 7789230e-9072-4bb0-8344-b24630fbb3ec
+		sourceLineageTag: category_code_description
+		summarizeBy: none
+		sourceColumn: category_code_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column census_tract
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 3e921fed-ad8b-4c03-8938-ce5b782ba20b
+		sourceLineageTag: census_tract
+		summarizeBy: none
+		sourceColumn: census_tract
+
+		annotation SummarizationSetBy = Automatic
+
+	column central_air
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: d9d55b9c-209a-4986-b71f-164ca95901a4
+		sourceLineageTag: central_air
+		summarizeBy: none
+		sourceColumn: central_air
+
+		annotation SummarizationSetBy = Automatic
+
+	column council_district_2016
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 8bfde6e4-e63d-4d93-b115-05cb4fcfc606
+		sourceLineageTag: council_district_2016
+		summarizeBy: none
+		sourceColumn: council_district_2016
+
+		annotation SummarizationSetBy = Automatic
+
+	column council_district_2024
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 33c74239-0f72-42f2-8dfe-5a8814f4312f
+		sourceLineageTag: council_district_2024
+		summarizeBy: none
+		sourceColumn: council_district_2024
+
+		annotation SummarizationSetBy = Automatic
+
+	column cross_reference
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 7ebe5b5f-5ecc-4eb3-ab08-6b946eabf319
+		sourceLineageTag: cross_reference
+		summarizeBy: none
+		sourceColumn: cross_reference
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_exterior_condition
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: aea59f5c-97da-4eae-b351-a67e1b29abe2
+		sourceLineageTag: date_exterior_condition
+		summarizeBy: none
+		sourceColumn: date_exterior_condition
+
+		annotation SummarizationSetBy = Automatic
+
+	column depth
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 538e6fd1-9568-41a3-a293-e224f31ab994
+		sourceLineageTag: depth
+		summarizeBy: sum
+		sourceColumn: depth
+
+		annotation SummarizationSetBy = Automatic
+
+	column elementary_school
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 1a78de7d-724e-4793-b09a-79409716c9c5
+		sourceLineageTag: elementary_school
+		summarizeBy: none
+		sourceColumn: elementary_school
+
+		annotation SummarizationSetBy = Automatic
+
+	column exempt_building
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1f10cb83-aabc-4cef-87e6-5ee4c544ada9
+		sourceLineageTag: exempt_building
+		summarizeBy: sum
+		sourceColumn: exempt_building
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column exempt_land
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 98fb934b-6a64-4326-b0f4-29978b1335c1
+		sourceLineageTag: exempt_land
+		summarizeBy: sum
+		sourceColumn: exempt_land
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column exterior_condition
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c694ac2e-921d-405d-8f5b-c6473e1e59eb
+		sourceLineageTag: exterior_condition
+		summarizeBy: none
+		sourceColumn: exterior_condition
+
+		annotation SummarizationSetBy = Automatic
+
+	column fireplaces
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 46b8405c-fc75-4793-9206-1ea312f542a4
+		sourceLineageTag: fireplaces
+		summarizeBy: sum
+		sourceColumn: fireplaces
+
+		annotation SummarizationSetBy = Automatic
+
+	column frontage
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 771ed34f-6360-4d74-a598-065be60f8422
+		sourceLineageTag: frontage
+		summarizeBy: sum
+		sourceColumn: frontage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column garage_spaces
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: e665404a-b0bd-4689-89eb-619a9a44a1ae
+		sourceLineageTag: garage_spaces
+		summarizeBy: sum
+		sourceColumn: garage_spaces
+
+		annotation SummarizationSetBy = Automatic
+
+	column garage_type
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f0f3c503-ed0a-40e6-b9a9-0c5d7d929a80
+		sourceLineageTag: garage_type
+		summarizeBy: none
+		sourceColumn: garage_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column general_construction
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c194b82c-2e2e-4029-8a27-6bcac070420c
+		sourceLineageTag: general_construction
+		summarizeBy: none
+		sourceColumn: general_construction
+
+		annotation SummarizationSetBy = Automatic
+
+	column geocode_lat
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c22786e1-d4d1-4fd3-8c17-3a8015c43339
+		sourceLineageTag: geocode_lat
+		summarizeBy: sum
+		sourceColumn: geocode_lat
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geocode_lon
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7512d4c5-a1e0-4a4d-a720-17a7145df1a1
+		sourceLineageTag: geocode_lon
+		summarizeBy: sum
+		sourceColumn: geocode_lon
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column high_school
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 75509066-5749-47d9-88b3-1619492cb017
+		sourceLineageTag: high_school
+		summarizeBy: none
+		sourceColumn: high_school
+
+		annotation SummarizationSetBy = Automatic
+
+	column homestead_exemption
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2902d2dc-93b3-4f0d-b312-bdb7ec343d8d
+		sourceLineageTag: homestead_exemption
+		summarizeBy: sum
+		sourceColumn: homestead_exemption
+
+		annotation SummarizationSetBy = Automatic
+
+	column house_extension
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2c80f5ec-4c6a-44f3-8424-db25078f96f9
+		sourceLineageTag: house_extension
+		summarizeBy: none
+		sourceColumn: house_extension
+
+		annotation SummarizationSetBy = Automatic
+
+	column house_number
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 28e251f8-3be1-46ca-aa6d-64ccf89b340c
+		sourceLineageTag: house_number
+		summarizeBy: none
+		sourceColumn: house_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column interior_condition
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 00786055-e161-4baf-84cd-582183092dee
+		sourceLineageTag: interior_condition
+		summarizeBy: none
+		sourceColumn: interior_condition
+
+		annotation SummarizationSetBy = Automatic
+
+	column li_district
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 57a6d07f-feff-409e-a9b3-dae2842383af
+		sourceLineageTag: li_district
+		summarizeBy: none
+		sourceColumn: li_district
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 5372ac58-94e0-4882-8d8c-031f648fbfcc
+		sourceLineageTag: location
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_address_1
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 708c1f0b-f5c9-4581-af3f-d1eee5dbbef3
+		sourceLineageTag: mailing_address_1
+		summarizeBy: none
+		sourceColumn: mailing_address_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_address_2
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 3330bec3-0125-4448-be5a-2bdb7278c207
+		sourceLineageTag: mailing_address_2
+		summarizeBy: none
+		sourceColumn: mailing_address_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_care_of
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 5f32aacb-20f3-47dc-ba38-d7fc80d27d2f
+		sourceLineageTag: mailing_care_of
+		summarizeBy: none
+		sourceColumn: mailing_care_of
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_city_state
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 081fd488-924b-4bd1-ba57-7ded597d7cf2
+		sourceLineageTag: mailing_city_state
+		summarizeBy: none
+		sourceColumn: mailing_city_state
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_street
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4c462443-df3f-411c-92bb-24f42c17d429
+		sourceLineageTag: mailing_street
+		summarizeBy: none
+		sourceColumn: mailing_street
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_zip
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 02919493-8f0f-4547-ae04-3f2f6991435f
+		sourceLineageTag: mailing_zip
+		summarizeBy: none
+		sourceColumn: mailing_zip
+
+		annotation SummarizationSetBy = Automatic
+
+	column market_value
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 0c7f96da-35af-4e05-893e-890e43edfac3
+		sourceLineageTag: market_value
+		summarizeBy: sum
+		sourceColumn: market_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column market_value_date
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0d5fbb8a-bfaf-4415-a656-e835cf12a350
+		sourceLineageTag: market_value_date
+		summarizeBy: none
+		sourceColumn: market_value_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column middle_school
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 85b6ec89-9b44-4d28-afa5-1c3a03d58d75
+		sourceLineageTag: middle_school
+		summarizeBy: none
+		sourceColumn: middle_school
+
+		annotation SummarizationSetBy = Automatic
+
+	column number_of_bathrooms
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2a7eceed-2553-4c1c-b061-71298a114f28
+		sourceLineageTag: number_of_bathrooms
+		summarizeBy: sum
+		sourceColumn: number_of_bathrooms
+
+		annotation SummarizationSetBy = Automatic
+
+	column number_of_bedrooms
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 830ca838-75e4-49a6-8d9b-f695ecffe244
+		sourceLineageTag: number_of_bedrooms
+		summarizeBy: sum
+		sourceColumn: number_of_bedrooms
+
+		annotation SummarizationSetBy = Automatic
+
+	column number_of_rooms
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 32f4035a-02e6-407f-bb26-ed5aa26eccfb
+		sourceLineageTag: number_of_rooms
+		summarizeBy: sum
+		sourceColumn: number_of_rooms
+
+		annotation SummarizationSetBy = Automatic
+
+	column number_stories
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 08a18745-d3df-4087-94f4-77720d3f7f64
+		sourceLineageTag: number_stories
+		summarizeBy: sum
+		sourceColumn: number_stories
+
+		annotation SummarizationSetBy = Automatic
+
+	column objectid
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 3ebc3d33-121f-4399-893d-d7e6504423e5
+		sourceLineageTag: objectid
+		summarizeBy: sum
+		sourceColumn: objectid
+
+		annotation SummarizationSetBy = Automatic
+
+	column off_street_open
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 8b8ddb22-2d59-4fd2-9f71-7ae91689389e
+		sourceLineageTag: off_street_open
+		summarizeBy: sum
+		sourceColumn: off_street_open
+
+		annotation SummarizationSetBy = Automatic
+
+	column other_building
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e274a92d-14b6-485b-91a5-518cb631f924
+		sourceLineageTag: other_building
+		summarizeBy: none
+		sourceColumn: other_building
+
+		annotation SummarizationSetBy = Automatic
+
+	column owner_1
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 77f703ef-d0f0-4f96-a414-89bbc2b1a763
+		sourceLineageTag: owner_1
+		summarizeBy: none
+		sourceColumn: owner_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column owner_2
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 937f3a17-a595-420e-99b5-ca8529dfe2d2
+		sourceLineageTag: owner_2
+		summarizeBy: none
+		sourceColumn: owner_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_number
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 523e72c5-d5c8-471b-940c-90416aefa8ed
+		sourceLineageTag: parcel_number
+		summarizeBy: none
+		sourceColumn: parcel_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_shape
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 98bb397c-e698-4c8d-986c-65858aae20a0
+		sourceLineageTag: parcel_shape
+		summarizeBy: none
+		sourceColumn: parcel_shape
+
+		annotation SummarizationSetBy = Automatic
+
+	column pin
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: edcb1da4-c14c-466f-a072-8f865669c6cf
+		sourceLineageTag: pin
+		summarizeBy: sum
+		sourceColumn: pin
+
+		annotation SummarizationSetBy = Automatic
+
+	column police_district
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c9c1c774-31a7-49e2-bfee-cb2e9a1b4bac
+		sourceLineageTag: police_district
+		summarizeBy: none
+		sourceColumn: police_district
+
+		annotation SummarizationSetBy = Automatic
+
+	column political_district
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f538218d-bb8c-4cd7-ba60-be4fa5fe98f4
+		sourceLineageTag: political_district
+		summarizeBy: none
+		sourceColumn: political_district
+
+		annotation SummarizationSetBy = Automatic
+
+	column political_ward
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0f1810ce-3853-410e-9271-fa3ca75cf652
+		sourceLineageTag: political_ward
+		summarizeBy: none
+		sourceColumn: political_ward
+
+		annotation SummarizationSetBy = Automatic
+
+	column pwd_parcel_id
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4b0415fe-2613-4534-9a4a-b935f48e2bfa
+		sourceLineageTag: pwd_parcel_id
+		summarizeBy: none
+		sourceColumn: pwd_parcel_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column quality_grade
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2b9101ab-f463-4f23-80c8-f836e7549369
+		sourceLineageTag: quality_grade
+		summarizeBy: none
+		sourceColumn: quality_grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column recording_date
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 5803b2d4-72bc-4454-ac56-74495de5a3aa
+		sourceLineageTag: recording_date
+		summarizeBy: none
+		sourceColumn: recording_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column registry_number
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2b1da3cf-5746-4720-8473-a5f819b9518f
+		sourceLineageTag: registry_number
+		summarizeBy: none
+		sourceColumn: registry_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column rubbish_recycle_day
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a81836e7-0726-4cd6-a5e5-5863e2b74410
+		sourceLineageTag: rubbish_recycle_day
+		summarizeBy: none
+		sourceColumn: rubbish_recycle_day
+
+		annotation SummarizationSetBy = Automatic
+
+	column sale_date
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: dc91cace-f19c-4e39-aa83-b6b76ebb67e9
+		sourceLineageTag: sale_date
+		summarizeBy: none
+		sourceColumn: sale_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column sale_price
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 11e0212d-bd30-46e8-8f12-96bc5f8cca5c
+		sourceLineageTag: sale_price
+		summarizeBy: sum
+		sourceColumn: sale_price
+
+		annotation SummarizationSetBy = Automatic
+
+	column separate_utilities
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 01b23525-8c22-48ea-9ccf-dfdfee1e28db
+		sourceLineageTag: separate_utilities
+		summarizeBy: none
+		sourceColumn: separate_utilities
+
+		annotation SummarizationSetBy = Automatic
+
+	column site_type
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 33a45b28-8fca-4145-8748-e0bcb135efeb
+		sourceLineageTag: site_type
+		summarizeBy: none
+		sourceColumn: site_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column state_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 8e7bc432-e8a2-49fb-9ee0-6241e06c08ea
+		sourceLineageTag: state_code
+		summarizeBy: none
+		sourceColumn: state_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c4f4f638-6d89-40a2-9375-7ed76f9afe98
+		sourceLineageTag: street_code
+		summarizeBy: none
+		sourceColumn: street_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_designation
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 38d941a9-f237-47ae-967a-425efd34b4b2
+		sourceLineageTag: street_designation
+		summarizeBy: none
+		sourceColumn: street_designation
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_direction
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: da70e772-4240-4707-bc6f-393e9165cfb2
+		sourceLineageTag: street_direction
+		summarizeBy: none
+		sourceColumn: street_direction
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_name
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a4a92d50-b70f-4ca8-ade5-5f4c4c98b254
+		sourceLineageTag: street_name
+		summarizeBy: none
+		sourceColumn: street_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column suffix
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: cf1a81db-a5d6-442e-a38b-23722c4185b6
+		sourceLineageTag: suffix
+		summarizeBy: none
+		sourceColumn: suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column taxable_building
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3a7e4f43-59b9-4695-a9b3-e4b8c987ef19
+		sourceLineageTag: taxable_building
+		summarizeBy: sum
+		sourceColumn: taxable_building
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taxable_land
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 51265d15-d8d9-4e24-864a-f6dd1d99ca6b
+		sourceLineageTag: taxable_land
+		summarizeBy: sum
+		sourceColumn: taxable_land
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column the_geom
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 425e6207-d66f-43c9-b0e0-76bc918c6da1
+		sourceLineageTag: the_geom
+		summarizeBy: none
+		sourceColumn: the_geom
+
+		annotation SummarizationSetBy = Automatic
+
+	column the_geom_webmercator
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 226dbeaa-0992-4ac9-af2f-e1f84e6ec8bb
+		sourceLineageTag: the_geom_webmercator
+		summarizeBy: none
+		sourceColumn: the_geom_webmercator
+
+		annotation SummarizationSetBy = Automatic
+
+	column topography
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: edefe7aa-a4c2-4c81-a858-c4c9c000ba2a
+		sourceLineageTag: topography
+		summarizeBy: none
+		sourceColumn: topography
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_area
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: bc2d59c0-b8c8-4ad0-b956-2f5f3e04ca2e
+		sourceLineageTag: total_area
+		summarizeBy: sum
+		sourceColumn: total_area
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_livable_area
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 44b1e9dd-e970-4bef-ad86-b21bc13df985
+		sourceLineageTag: total_livable_area
+		summarizeBy: sum
+		sourceColumn: total_livable_area
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_heater
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 7a9946bf-3f51-40a4-85cb-a51828b68328
+		sourceLineageTag: type_heater
+		summarizeBy: none
+		sourceColumn: type_heater
+
+		annotation SummarizationSetBy = Automatic
+
+	column unfinished
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: fac2acd7-23ee-4314-a01d-3503b9de1311
+		sourceLineageTag: unfinished
+		summarizeBy: none
+		sourceColumn: unfinished
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 7661d8b2-587a-4ea3-8be3-90c1311a446e
+		sourceLineageTag: unit
+		summarizeBy: none
+		sourceColumn: unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column view_type
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 68d8d12c-9b81-4522-979d-d31c688ab188
+		sourceLineageTag: view_type
+		summarizeBy: none
+		sourceColumn: view_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_built
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2250e260-362f-4f20-bd42-d59d4790def2
+		sourceLineageTag: year_built
+		summarizeBy: none
+		sourceColumn: year_built
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_built_estimate
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: bd8cd48d-01ef-403c-9339-6118ac469472
+		sourceLineageTag: year_built_estimate
+		summarizeBy: none
+		sourceColumn: year_built_estimate
+
+		annotation SummarizationSetBy = Automatic
+
+	column zip_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 23794a9b-966b-42d3-833b-900d7b8b2939
+		sourceLineageTag: zip_code
+		summarizeBy: none
+		sourceColumn: zip_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column zoning
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 641bdadf-0146-4f22-adc3-a19ce5a9d2b2
+		sourceLineageTag: zoning
+		summarizeBy: none
+		sourceColumn: zoning
+
+		annotation SummarizationSetBy = Automatic
+
+	partition philly_opa_properties_public_pde-844e9837-3ed9-4ac5-93bb-6a52c36dc7cb = entity
+		mode: directLake
+		source
+			entityName: philly_opa_properties_public_pde
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

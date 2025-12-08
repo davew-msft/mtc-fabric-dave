@@ -1,0 +1,27 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "reimport",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "DefaultDestination": {
+      "queryId": "0fb96e03-f421-459b-826c-9e899800a529",
+      "queryName": "DefaultDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Sheet1": {
+      "queryId": "15ff6876-ff1a-4d2c-93ff-27a905b7cb5d",
+      "queryName": "Sheet1",
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://onemtc-my.sharepoint.com/personal/davewen_onemtc_net/",
+      "kind": "Web",
+      "connectionId": "{\"ClusterId\":\"f45d97db-09cb-47bf-ad34-c86ee19504a1\",\"DatasourceId\":\"a0945474-4696-481f-8d75-f60ee7cfc919\"}"
+    }
+  ]
+}

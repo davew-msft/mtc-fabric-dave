@@ -1,0 +1,37 @@
+model 814e45bf-5897-4af0-9bde-392ede5d2d90
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation SourceLineageTagType = DatabaseFullyQualifiedName
+
+annotation PBI_QueryOrder = ["EntityAddressList","exec_requests_history","long_running_queries","frequently_run_queries","exec_sessions_history","sql_pool_insights","philly_assessments","philly_case_investigations","philly_real_estate_tax_balances","philly_opa_properties_public_pde","philly_appeals","philly_business_licenses","masteraddress","philly_demolitions","philly_problempropertylist","philly_com_act_licenses","philly_flattened_properties","philly_rtt_summary","philly_permits","masterentity","masterentityaddress","tempbl","philly_violations"]
+
+ref table exec_requests_history
+ref table long_running_queries
+ref table frequently_run_queries
+ref table philly_assessments
+ref table philly_appeals
+ref table philly_case_investigations
+ref table philly_demolitions
+ref table philly_rtt_summary
+ref table philly_permits
+ref table philly_real_estate_tax_balances
+ref table philly_opa_properties_public_pde
+ref table philly_violations
+ref table philly_com_act_licenses
+ref table philly_problempropertylist
+ref table philly_flattened_properties
+ref table philly_business_licenses
+ref table masteraddress
+ref table masterentity
+ref table masterentityaddress
+ref table EntityAddressList
+ref table tempbl
+

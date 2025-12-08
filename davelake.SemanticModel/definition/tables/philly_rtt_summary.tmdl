@@ -1,0 +1,546 @@
+table philly_rtt_summary
+	lineageTag: bec9d92d-deda-4edb-a165-906e1500d61c
+	sourceLineageTag: [dbo].[philly_rtt_summary]
+
+	column address_high
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 680aac8b-7dc0-4817-b059-cac3b74eb8d7
+		sourceLineageTag: address_high
+		summarizeBy: none
+		sourceColumn: address_high
+
+		annotation SummarizationSetBy = Automatic
+
+	column address_low
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 7372325d-74ef-4e0e-a18e-99d5683c35ed
+		sourceLineageTag: address_low
+		summarizeBy: sum
+		sourceColumn: address_low
+
+		annotation SummarizationSetBy = Automatic
+
+	column address_low_frac
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 8935b782-7f48-461e-888d-8ba2a30593c4
+		sourceLineageTag: address_low_frac
+		summarizeBy: none
+		sourceColumn: address_low_frac
+
+		annotation SummarizationSetBy = Automatic
+
+	column address_low_suffix
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 033abe82-0afc-48b3-bd20-4507a46b6568
+		sourceLineageTag: address_low_suffix
+		summarizeBy: none
+		sourceColumn: address_low_suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column adjusted_assessed_value
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 3ae31408-8f9c-4ff6-aadf-3d572628e1df
+		sourceLineageTag: adjusted_assessed_value
+		summarizeBy: none
+		sourceColumn: adjusted_assessed_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column adjusted_cash_consideration
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 66a50b18-cfa7-4fb7-99a1-cb9dbd331b1e
+		sourceLineageTag: adjusted_cash_consideration
+		summarizeBy: sum
+		sourceColumn: adjusted_cash_consideration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column adjusted_fair_market_value
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 2f0fc5c1-a71b-479f-b8e8-632544b67f67
+		sourceLineageTag: adjusted_fair_market_value
+		summarizeBy: sum
+		sourceColumn: adjusted_fair_market_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column adjusted_local_tax_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a9476f16-5147-455d-82d4-0947b86b3310
+		sourceLineageTag: adjusted_local_tax_amount
+		summarizeBy: sum
+		sourceColumn: adjusted_local_tax_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column adjusted_other_consideration
+		dataType: double
+		sourceProviderType: float
+		lineageTag: cd554910-d5e8-4a3b-be11-35846609bc45
+		sourceLineageTag: adjusted_other_consideration
+		summarizeBy: sum
+		sourceColumn: adjusted_other_consideration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column adjusted_state_tax_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c7b93659-43f1-4195-9e40-03e83fb02e03
+		sourceLineageTag: adjusted_state_tax_amount
+		summarizeBy: sum
+		sourceColumn: adjusted_state_tax_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column adjusted_total_consideration
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3226a205-bdef-4e2e-a7cf-73c9a9946532
+		sourceLineageTag: adjusted_total_consideration
+		summarizeBy: sum
+		sourceColumn: adjusted_total_consideration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column assessed_value
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: bb00d02b-3267-4a09-96be-fd50f577bf73
+		sourceLineageTag: assessed_value
+		summarizeBy: none
+		sourceColumn: assessed_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column cartodb_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 030f064e-ee60-4855-b48f-3a2863186f5e
+		sourceLineageTag: cartodb_id
+		summarizeBy: sum
+		sourceColumn: cartodb_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cash_consideration
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7862da6d-af63-4eb9-865e-e416c2d6f169
+		sourceLineageTag: cash_consideration
+		summarizeBy: sum
+		sourceColumn: cash_consideration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column common_level_ratio
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 27459698-532a-4573-aee7-48eb4912ec04
+		sourceLineageTag: common_level_ratio
+		summarizeBy: none
+		sourceColumn: common_level_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+	column condo_name
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4b97b376-8514-43f4-b93e-dc096d9b1bd3
+		sourceLineageTag: condo_name
+		summarizeBy: none
+		sourceColumn: condo_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column discrepancy
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 710a78f7-3a65-49ab-be86-59f84db05673
+		sourceLineageTag: discrepancy
+		summarizeBy: none
+		sourceColumn: discrepancy
+
+		annotation SummarizationSetBy = Automatic
+
+	column display_date
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: dd9ef0fb-409d-4c57-bc21-054aa96c2213
+		sourceLineageTag: display_date
+		summarizeBy: none
+		sourceColumn: display_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column document_date
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 20b67d4d-1613-47b1-b0b6-c39ac5ece5fa
+		sourceLineageTag: document_date
+		summarizeBy: none
+		sourceColumn: document_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column document_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b27792c5-72ec-4565-99db-0cd54822667e
+		sourceLineageTag: document_id
+		summarizeBy: sum
+		sourceColumn: document_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column document_type
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2c6e7683-8e78-42df-bf8b-a5cf6fbafc11
+		sourceLineageTag: document_type
+		summarizeBy: none
+		sourceColumn: document_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column fair_market_value
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 26c12ed0-1f37-4ec3-b598-d674ceda55bc
+		sourceLineageTag: fair_market_value
+		summarizeBy: sum
+		sourceColumn: fair_market_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column grantees
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e6d7e6ec-19c5-40cc-a555-3bf7df250ff9
+		sourceLineageTag: grantees
+		summarizeBy: none
+		sourceColumn: grantees
+
+		annotation SummarizationSetBy = Automatic
+
+	column grantors
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 373e670a-bce3-46e9-be10-755e316f2cf2
+		sourceLineageTag: grantors
+		summarizeBy: none
+		sourceColumn: grantors
+
+		annotation SummarizationSetBy = Automatic
+
+	column legal_remarks
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 03feae67-d480-4d30-b0d8-54007f329855
+		sourceLineageTag: legal_remarks
+		summarizeBy: none
+		sourceColumn: legal_remarks
+
+		annotation SummarizationSetBy = Automatic
+
+	column local_tax_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 0ea958d7-5092-4d20-a597-9ab8383e1e49
+		sourceLineageTag: local_tax_amount
+		summarizeBy: sum
+		sourceColumn: local_tax_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column local_tax_percent
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9e3e514c-70f2-4774-9550-ffe16d84d414
+		sourceLineageTag: local_tax_percent
+		summarizeBy: sum
+		sourceColumn: local_tax_percent
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column matched_regmap
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2acc4b5b-27d2-4507-adaf-a88a2d241113
+		sourceLineageTag: matched_regmap
+		summarizeBy: none
+		sourceColumn: matched_regmap
+
+		annotation SummarizationSetBy = Automatic
+
+	column objectid
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: e9eb7eec-efc6-4a81-bb8e-6cbb0f07c0c8
+		sourceLineageTag: objectid
+		summarizeBy: sum
+		sourceColumn: objectid
+
+		annotation SummarizationSetBy = Automatic
+
+	column opa_account_num
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 79dabcef-bcbb-418d-b200-76baf60e1025
+		sourceLineageTag: opa_account_num
+		summarizeBy: none
+		sourceColumn: opa_account_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column other_consideration
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 5cabcfc0-ecce-4560-b809-52994f8b1cb5
+		sourceLineageTag: other_consideration
+		summarizeBy: sum
+		sourceColumn: other_consideration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column property_count
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 6dd3ab02-ba07-4323-8416-76f964ad58bd
+		sourceLineageTag: property_count
+		summarizeBy: sum
+		sourceColumn: property_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column receipt_date
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 86af455f-f0a0-4149-8ece-70ada7c5a854
+		sourceLineageTag: receipt_date
+		summarizeBy: none
+		sourceColumn: receipt_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column receipt_num
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 9566bb68-f1b0-4ba8-b668-f5190991df4b
+		sourceLineageTag: receipt_num
+		summarizeBy: none
+		sourceColumn: receipt_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column record_id
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: bc0cac86-e892-41bb-92ec-f75ed0f441a5
+		sourceLineageTag: record_id
+		summarizeBy: none
+		sourceColumn: record_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column recording_date
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: def68639-5d9f-4831-b641-edbc87dcca9d
+		sourceLineageTag: recording_date
+		summarizeBy: none
+		sourceColumn: recording_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column reg_map_id
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ba65d5c2-062c-4aa7-b230-2f36103bfec2
+		sourceLineageTag: reg_map_id
+		summarizeBy: none
+		sourceColumn: reg_map_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column state_tax_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3d86c711-3f0d-4e25-9373-e97f8d2b9cd2
+		sourceLineageTag: state_tax_amount
+		summarizeBy: sum
+		sourceColumn: state_tax_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column state_tax_percent
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ef4aafcc-a6f6-4faa-ab3e-2fd7356e859e
+		sourceLineageTag: state_tax_percent
+		summarizeBy: sum
+		sourceColumn: state_tax_percent
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column street_address
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 71eaf15d-505d-4542-bed2-d7cad78fe55f
+		sourceLineageTag: street_address
+		summarizeBy: none
+		sourceColumn: street_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_name
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f48a19b3-dcf5-44d0-81a5-4a8ebff69069
+		sourceLineageTag: street_name
+		summarizeBy: none
+		sourceColumn: street_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_postdir
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: bfb906a0-785c-4ee1-a82e-7362406c76a3
+		sourceLineageTag: street_postdir
+		summarizeBy: none
+		sourceColumn: street_postdir
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_predir
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 3e09b8e8-65bc-4296-a1ca-1c187dc9e0cc
+		sourceLineageTag: street_predir
+		summarizeBy: none
+		sourceColumn: street_predir
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_suffix
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 814c6995-25a1-4155-81d6-4e7ed035b25f
+		sourceLineageTag: street_suffix
+		summarizeBy: none
+		sourceColumn: street_suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column the_geom
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 08591506-0048-4ff1-ba43-4a569bec9ee7
+		sourceLineageTag: the_geom
+		summarizeBy: none
+		sourceColumn: the_geom
+
+		annotation SummarizationSetBy = Automatic
+
+	column the_geom_webmercator
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 580b9768-6782-4b56-a18f-00da4022d03d
+		sourceLineageTag: the_geom_webmercator
+		summarizeBy: none
+		sourceColumn: the_geom_webmercator
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_consideration
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 69ee9376-7546-4123-a92e-c03a1e78bd5a
+		sourceLineageTag: total_consideration
+		summarizeBy: sum
+		sourceColumn: total_consideration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unit_num
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 1a5e1b6b-cfe5-43b2-b076-622282aadaf2
+		sourceLineageTag: unit_num
+		summarizeBy: none
+		sourceColumn: unit_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column ward
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 7b642568-beaa-412f-b26e-dfe454fb3f39
+		sourceLineageTag: ward
+		summarizeBy: none
+		sourceColumn: ward
+
+		annotation SummarizationSetBy = Automatic
+
+	column zip_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ef257c2d-7845-441b-a1c7-5661f39429e7
+		sourceLineageTag: zip_code
+		summarizeBy: none
+		sourceColumn: zip_code
+
+		annotation SummarizationSetBy = Automatic
+
+	partition philly_rtt_summary-67a1e456-5420-4f45-a909-9954908b6d74 = entity
+		mode: directLake
+		source
+			entityName: philly_rtt_summary
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

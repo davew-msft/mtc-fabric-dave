@@ -1,0 +1,17 @@
+model bd28fea4-b47b-4365-9d0f-477f64442ce8
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["sql_pool_insights","exec_requests_history","long_running_queries","frequently_run_queries","exec_sessions_history","sample_site filtered","informa-filtered","informa-spc-data"]
+
+annotation SourceLineageTagType = DatabaseFullyQualifiedName
+
+ref table informa-spc-data
+

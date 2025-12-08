@@ -1,0 +1,359 @@
+table philly_violations
+	lineageTag: 901b43de-c224-4754-8440-51df9fe9ef59
+	sourceLineageTag: [dbo].[philly_violations]
+
+	column address
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a38327f3-4607-4447-9f41-9e02efa2c2fe
+		sourceLineageTag: address
+		summarizeBy: none
+		sourceColumn: address
+
+		annotation SummarizationSetBy = Automatic
+
+	column addressobjectid
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 7dde9b64-a6cf-4402-b38c-a86458ec3511
+		sourceLineageTag: addressobjectid
+		summarizeBy: none
+		sourceColumn: addressobjectid
+
+		annotation SummarizationSetBy = Automatic
+
+	column cartodb_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 1eaefa59-d5e9-4881-94db-767581b0355d
+		sourceLineageTag: cartodb_id
+		summarizeBy: sum
+		sourceColumn: cartodb_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column casecompleteddate
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c716762c-5585-4512-8ded-f186c7198e8a
+		sourceLineageTag: casecompleteddate
+		summarizeBy: none
+		sourceColumn: casecompleteddate
+
+		annotation SummarizationSetBy = Automatic
+
+	column casecreateddate
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 91b21e1e-c867-45c6-8437-840c74a2b1f6
+		sourceLineageTag: casecreateddate
+		summarizeBy: none
+		sourceColumn: casecreateddate
+
+		annotation SummarizationSetBy = Automatic
+
+	column casenumber
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a05af084-4a2f-4f05-80c5-d0c1f55abd9b
+		sourceLineageTag: casenumber
+		summarizeBy: none
+		sourceColumn: casenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column caseprioritydesc
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0f57ddad-ab58-41a1-8c60-2d7c4ee0da96
+		sourceLineageTag: caseprioritydesc
+		summarizeBy: none
+		sourceColumn: caseprioritydesc
+
+		annotation SummarizationSetBy = Automatic
+
+	column caseresponsibility
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0708f512-d86c-400d-acbc-209b0a8f1ea9
+		sourceLineageTag: caseresponsibility
+		summarizeBy: none
+		sourceColumn: caseresponsibility
+
+		annotation SummarizationSetBy = Automatic
+
+	column casestatus
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 61f0d9f0-a7fe-486e-ba27-d24fcffcd69d
+		sourceLineageTag: casestatus
+		summarizeBy: none
+		sourceColumn: casestatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column casetype
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: dbf9f4f1-6a49-4d40-954e-304162365491
+		sourceLineageTag: casetype
+		summarizeBy: none
+		sourceColumn: casetype
+
+		annotation SummarizationSetBy = Automatic
+
+	column censustract
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 3effc9e1-7017-4b1c-bde2-e617a95ccdbe
+		sourceLineageTag: censustract
+		summarizeBy: none
+		sourceColumn: censustract
+
+		annotation SummarizationSetBy = Automatic
+
+	column council_district
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 118fcace-a4c4-4b57-a4ca-e0de5c311a59
+		sourceLineageTag: council_district
+		summarizeBy: none
+		sourceColumn: council_district
+
+		annotation SummarizationSetBy = Automatic
+
+	column geocode_x
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 5f3dce6f-0f5b-42ec-9dfe-b68082736141
+		sourceLineageTag: geocode_x
+		summarizeBy: sum
+		sourceColumn: geocode_x
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geocode_y
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b9f1030f-471f-40fd-bb19-bc67319e0af5
+		sourceLineageTag: geocode_y
+		summarizeBy: sum
+		sourceColumn: geocode_y
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mostrecentinvestigation
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: b76014c2-0ddb-4d2c-a064-ce04f94d8293
+		sourceLineageTag: mostrecentinvestigation
+		summarizeBy: none
+		sourceColumn: mostrecentinvestigation
+
+		annotation SummarizationSetBy = Automatic
+
+	column objectid
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2d6ec09c-d013-4844-bd06-1e1d3f4d799e
+		sourceLineageTag: objectid
+		summarizeBy: sum
+		sourceColumn: objectid
+
+		annotation SummarizationSetBy = Automatic
+
+	column opa_account_num
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c496357a-386f-46b9-b355-788fbb357ffb
+		sourceLineageTag: opa_account_num
+		summarizeBy: none
+		sourceColumn: opa_account_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column opa_owner
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e80dee00-122f-4291-936e-281255006635
+		sourceLineageTag: opa_owner
+		summarizeBy: none
+		sourceColumn: opa_owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_id_num
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0738caaf-7f54-4ce3-a62a-ad63b6e426f4
+		sourceLineageTag: parcel_id_num
+		summarizeBy: none
+		sourceColumn: parcel_id_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column posse_jobid
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ff5d0821-5e52-4fa5-ba9d-da2ab537f347
+		sourceLineageTag: posse_jobid
+		summarizeBy: none
+		sourceColumn: posse_jobid
+
+		annotation SummarizationSetBy = Automatic
+
+	column publicnov
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 78bf51b2-c09a-4613-9b64-8e10701be7bb
+		sourceLineageTag: publicnov
+		summarizeBy: none
+		sourceColumn: publicnov
+
+		annotation SummarizationSetBy = Automatic
+
+	column systemofrecord
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 99970b11-06d4-4c73-9501-df3f3a044fc0
+		sourceLineageTag: systemofrecord
+		summarizeBy: none
+		sourceColumn: systemofrecord
+
+		annotation SummarizationSetBy = Automatic
+
+	column the_geom
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: bcf4c79d-2b39-4ed6-a777-e42d77b08def
+		sourceLineageTag: the_geom
+		summarizeBy: none
+		sourceColumn: the_geom
+
+		annotation SummarizationSetBy = Automatic
+
+	column the_geom_webmercator
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 110039cd-3412-4caf-b601-f1d065a6f332
+		sourceLineageTag: the_geom_webmercator
+		summarizeBy: none
+		sourceColumn: the_geom_webmercator
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_num
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a45185b1-621b-4948-9d35-438e7e2e9332
+		sourceLineageTag: unit_num
+		summarizeBy: none
+		sourceColumn: unit_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_type
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 530d210d-260e-4288-8c06-68d3a5f9d33d
+		sourceLineageTag: unit_type
+		summarizeBy: none
+		sourceColumn: unit_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column violationcode
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 10c5c481-c3d4-44d7-b971-65886c6de482
+		sourceLineageTag: violationcode
+		summarizeBy: none
+		sourceColumn: violationcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column violationcodetitle
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 11b143cf-5ace-4d83-a155-0761b5ec0216
+		sourceLineageTag: violationcodetitle
+		summarizeBy: none
+		sourceColumn: violationcodetitle
+
+		annotation SummarizationSetBy = Automatic
+
+	column violationdate
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f77df2ca-42c8-490c-8acd-1719a07a8474
+		sourceLineageTag: violationdate
+		summarizeBy: none
+		sourceColumn: violationdate
+
+		annotation SummarizationSetBy = Automatic
+
+	column violationnumber
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 43170c60-2cff-437b-a47a-6d8f728ce251
+		sourceLineageTag: violationnumber
+		summarizeBy: none
+		sourceColumn: violationnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column violationresolutioncode
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 88ae3a95-6027-4fe8-b40d-12d61921e0e8
+		sourceLineageTag: violationresolutioncode
+		summarizeBy: none
+		sourceColumn: violationresolutioncode
+
+		annotation SummarizationSetBy = Automatic
+
+	column violationresolutiondate
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 5233cba9-23d6-42b1-b782-92658ab61897
+		sourceLineageTag: violationresolutiondate
+		summarizeBy: none
+		sourceColumn: violationresolutiondate
+
+		annotation SummarizationSetBy = Automatic
+
+	column violationstatus
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 9269be75-3a5f-42b2-a0df-95b12b5843bd
+		sourceLineageTag: violationstatus
+		summarizeBy: none
+		sourceColumn: violationstatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column zip
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: daaf79d8-ac55-409d-b4aa-d518914fd195
+		sourceLineageTag: zip
+		summarizeBy: none
+		sourceColumn: zip
+
+		annotation SummarizationSetBy = Automatic
+
+	partition philly_violations-0f937342-573f-4fb2-bea0-53eb06408d3d = entity
+		mode: directLake
+		source
+			entityName: philly_violations
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

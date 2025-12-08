@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "shortcutw"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e0e6a5ca-e12b-b94b-426b-73b77a07e3c6"
+  }
+}

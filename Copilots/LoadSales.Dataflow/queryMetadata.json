@@ -1,0 +1,49 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "LoadSales",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "Sales csv": {
+      "queryId": "2e9d2c9c-4d1d-4fae-a38d-a40b32158c11",
+      "queryName": "Sales csv",
+      "loadEnabled": false
+    },
+    "Person csv": {
+      "queryId": "3a89f2dc-8b13-4401-8903-21b7cada5b1f",
+      "queryName": "Person csv",
+      "loadEnabled": false
+    },
+    "Products csv": {
+      "queryId": "62fb1733-9e84-49ce-a5d1-bea90d72c18e",
+      "queryName": "Products csv",
+      "loadEnabled": false
+    },
+    "Sales csv_DataDestination": {
+      "queryId": "07b88e45-1677-4b82-851a-9fc00c4ef4c0",
+      "queryName": "Sales csv_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Person csv_DataDestination": {
+      "queryId": "926a6c22-b70f-4340-aefa-0ff6d3dace46",
+      "queryName": "Person csv_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Products csv_DataDestination": {
+      "queryId": "4d39e9e2-bd5d-451e-b95b-05ad90f116cb",
+      "queryName": "Products csv_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"f45d97db-09cb-47bf-ad34-c86ee19504a1\",\"DatasourceId\":\"7bfb817e-12ee-45c8-b352-fedcdd7ab4f5\"}"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+table tempbl
+	lineageTag: 5e5de837-d7ec-4e1b-94ef-6cef860cc53b
+	sourceLineageTag: [dbo].[tempbl]
+
+	column opa_account_num
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 014ad33a-83b8-435c-8fc6-261002325779
+		sourceLineageTag: opa_account_num
+		summarizeBy: none
+		sourceColumn: opa_account_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column EntityName
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: b38b842c-aa72-4161-8c57-42b90bfee581
+		sourceLineageTag: EntityName
+		summarizeBy: none
+		sourceColumn: EntityName
+
+		annotation SummarizationSetBy = Automatic
+
+	column NameText
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ab56fc14-8351-4b71-93a9-0257db8ac974
+		sourceLineageTag: NameText
+		summarizeBy: none
+		sourceColumn: NameText
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tempbl-62cf1379-d875-47d9-83f0-93e37ca0ea0f = entity
+		mode: directLake
+		source
+			entityName: tempbl
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

@@ -1,0 +1,570 @@
+{
+  "properties": {
+    "jobMode": "Batch",
+    "source": {
+      "type": "LakehouseTable",
+      "connectionSettings": {
+        "type": "Lakehouse",
+        "typeProperties": {
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "artifactId": "ff071f9d-c056-9471-4ecc-aec9d21695b1",
+          "rootFolder": "Tables"
+        }
+      }
+    },
+    "destination": {
+      "type": "Parquet",
+      "connectionSettings": {
+        "type": "AzureBlobStorage",
+        "externalReferences": {
+          "connection": "e62866a1-58e9-46f6-98f8-a9124ddf7136"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00"
+    }
+  },
+  "activities": [
+    {
+      "id": "3bc9c032-fb89-41df-a038-40a904a2d247",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "masteraddress"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "masteraddress.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "60392d21-470e-4ba5-a3e7-d28fa4167df5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "masterentity"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "masterentity.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "3c6c50d2-5589-40c3-8251-e8269046f764",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "masterentityaddress"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "masterentityaddress.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "9fd836e6-1461-451f-8382-c5ede82211cd",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_appeals"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_appeals.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "c5a255cd-d100-46b9-822e-82d55614a8a3",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_assessments"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_assessments.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "babf426a-2067-4473-b5ee-aff42125bf81",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_business_licenses"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_business_licenses.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "7213dc84-b916-49f2-8d41-5c7f54e29ce8",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_case_investigations"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_case_investigations.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "20d459a3-d1ce-41c7-83ea-01a95f943321",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_com_act_licenses"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_com_act_licenses.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "585e74a7-b907-49c6-820b-afb19ab387df",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_demolitions"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_demolitions.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "ef731a5a-9265-477b-ad69-50ddda4bbfe7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_opa_properties_public_pde"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_opa_properties_public_pde.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "18ec022c-d43d-4b67-b3b7-fc3035d8748a",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_permits"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_permits.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "28cc9863-dd62-4e12-a6a6-93a7070c8ae7",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_problempropertylist"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_problempropertylist.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "816f4f6a-23b2-472c-872e-e933537ab36b",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_real_estate_tax_balances"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_real_estate_tax_balances.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "5980a064-533f-48fa-8942-045db8b1c089",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_rtt_summary"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_rtt_summary.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "id": "be45ab3a-2b2b-4e49-9077-5925b90b65d1",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "table": "philly_violations"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "AzureBlobStorageLocation",
+              "fileName": "philly_violations.txt",
+              "container": "extracts"
+            },
+            "compressionCodec": "snappy"
+          },
+          "storeSettings": {
+            "recursive": false
+          },
+          "formatSettings": {
+            "enableVertiParquet": false
+          }
+        },
+        "enableStaging": false,
+        "translator": {
+          "type": "TabularTranslator"
+        },
+        "typeConversionSettings": {
+          "typeConversion": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    }
+  ]
+}

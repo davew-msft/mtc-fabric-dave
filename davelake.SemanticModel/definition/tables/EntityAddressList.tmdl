@@ -1,0 +1,83 @@
+table EntityAddressList
+	lineageTag: 279e3f00-4ad9-4117-aeec-b2a7e68db20b
+	sourceLineageTag: [dbo].[EntityAddressList]
+
+	column masterEntityAddressID
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 77bc884f-406e-4b10-889b-10799c300d45
+		sourceLineageTag: masterEntityAddressID
+		summarizeBy: none
+		sourceColumn: masterEntityAddressID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MasterEntityID
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2e1f89d5-9d71-4510-a59b-2a6474b1d576
+		sourceLineageTag: MasterEntityID
+		summarizeBy: none
+		sourceColumn: MasterEntityID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MasterAddressID
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4401ade9-1b29-491e-8835-082b94054ab1
+		sourceLineageTag: MasterAddressID
+		summarizeBy: none
+		sourceColumn: MasterAddressID
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_number
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0cff5c71-b76f-4cee-ab0d-1f256d2d0238
+		sourceLineageTag: parcel_number
+		summarizeBy: none
+		sourceColumn: parcel_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column Notes
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 3ce2ddf0-e767-4c66-92a9-40e0f6bcaf25
+		sourceLineageTag: Notes
+		summarizeBy: none
+		sourceColumn: Notes
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressText
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e78f9630-d010-448c-a332-9a48345f2817
+		sourceLineageTag: AddressText
+		summarizeBy: none
+		sourceColumn: AddressText
+
+		annotation SummarizationSetBy = Automatic
+
+	column NameText
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ff5e0a73-e4e4-44bc-97ef-9019139756f3
+		sourceLineageTag: NameText
+		summarizeBy: none
+		sourceColumn: NameText
+
+		annotation SummarizationSetBy = Automatic
+
+	partition EntityAddressList-6ad63cf0-0cb5-4014-a9fc-1b3daffdd83e = entity
+		mode: directLake
+		source
+			entityName: EntityAddressList
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

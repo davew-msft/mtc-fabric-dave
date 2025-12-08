@@ -1,0 +1,365 @@
+table informa-filtered
+	lineageTag: 6e9cc990-14e5-4ea5-abff-932b098670eb
+	sourceLineageTag: [dbo].[informa-filtered]
+
+	column MANUFACTURE_SITE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7e942253-f053-4ff0-b840-4219be292dce
+		sourceLineageTag: MANUFACTURE_SITE
+		summarizeBy: none
+		sourceColumn: MANUFACTURE_SITE
+
+		annotation SummarizationSetBy = Automatic
+
+	column RESULT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: a9c775b8-d6eb-4c17-b83b-0a03d723adcf
+		sourceLineageTag: RESULT_ID
+		summarizeBy: count
+		sourceColumn: RESULT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRODUCT_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: cbd1685f-57a7-4c84-83e7-23660f936d43
+		sourceLineageTag: PRODUCT_NAME
+		summarizeBy: none
+		sourceColumn: PRODUCT_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column UNIT_OPERATION
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 758006d0-e97a-4c11-800e-2f5f14bac6a1
+		sourceLineageTag: UNIT_OPERATION
+		summarizeBy: none
+		sourceColumn: UNIT_OPERATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column BATCH_NUMBER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d743116e-eed2-4139-bd6f-ab71fe8e5ccf
+		sourceLineageTag: BATCH_NUMBER
+		summarizeBy: none
+		sourceColumn: BATCH_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUBLOT
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 43194097-59c2-4669-beea-318e63abfad2
+		sourceLineageTag: SUBLOT
+		summarizeBy: sum
+		sourceColumn: SUBLOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column BATCH_NUMBER_WITH_SUBLOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8d38b83a-44dd-4480-86d0-543d1523f48c
+		sourceLineageTag: BATCH_NUMBER_WITH_SUBLOT
+		summarizeBy: none
+		sourceColumn: BATCH_NUMBER_WITH_SUBLOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column MATERIAL_NUMBER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 170a1f5b-3161-4615-9a50-6ab39c4df5c9
+		sourceLineageTag: MATERIAL_NUMBER
+		summarizeBy: none
+		sourceColumn: MATERIAL_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column SORTING_DATE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 50a0100b-8c28-448b-b7ca-6e007fe33608
+		sourceLineageTag: SORTING_DATE
+		summarizeBy: none
+		sourceColumn: SORTING_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATE_OF_MANUFACTURE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a7e178a4-9fae-4d88-bab3-4686d5895e0f
+		sourceLineageTag: DATE_OF_MANUFACTURE
+		summarizeBy: none
+		sourceColumn: DATE_OF_MANUFACTURE
+
+		annotation SummarizationSetBy = Automatic
+
+	column FINAL_DISPOSITION
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 38b6178d-839a-400b-8454-caf0d7b8f8f5
+		sourceLineageTag: FINAL_DISPOSITION
+		summarizeBy: none
+		sourceColumn: FINAL_DISPOSITION
+
+		annotation SummarizationSetBy = Automatic
+
+	column FINAL_DISPOSITION_DATE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 428fcec9-fce4-4dda-b8c8-2a06d1ae700f
+		sourceLineageTag: FINAL_DISPOSITION_DATE
+		summarizeBy: none
+		sourceColumn: FINAL_DISPOSITION_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARAMETER_CATEGORY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 96b0a0b9-6a80-4b43-8c89-dcbaf4dd0209
+		sourceLineageTag: PARAMETER_CATEGORY
+		summarizeBy: none
+		sourceColumn: PARAMETER_CATEGORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY_FIELD_FLAG
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 02c0ecd8-089c-4e6b-b296-59c6d6baee81
+		sourceLineageTag: CATEGORY_FIELD_FLAG
+		summarizeBy: none
+		sourceColumn: CATEGORY_FIELD_FLAG
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY_FIELD_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f2983660-df70-4b27-8af2-7c0d0eb89515
+		sourceLineageTag: CATEGORY_FIELD_NAME
+		summarizeBy: none
+		sourceColumn: CATEGORY_FIELD_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY_FIELD_VALUE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 189ccacf-3635-4206-bdd4-15e98d8c6ff5
+		sourceLineageTag: CATEGORY_FIELD_VALUE
+		summarizeBy: none
+		sourceColumn: CATEGORY_FIELD_VALUE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY_FIELD_FLAG_2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 12cf0d1e-db08-446f-81a8-dc72875760e1
+		sourceLineageTag: CATEGORY_FIELD_FLAG_2
+		summarizeBy: none
+		sourceColumn: CATEGORY_FIELD_FLAG_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY_FIELD_NAME_2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b6fde865-d112-4dc5-9530-fb142fd1ca22
+		sourceLineageTag: CATEGORY_FIELD_NAME_2
+		summarizeBy: none
+		sourceColumn: CATEGORY_FIELD_NAME_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY_FIELD_VALUE_2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4a2ba023-422f-4524-96b0-2303e4b63577
+		sourceLineageTag: CATEGORY_FIELD_VALUE_2
+		summarizeBy: none
+		sourceColumn: CATEGORY_FIELD_VALUE_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARAMETER_FIELD_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2349a987-4906-4891-9557-38562ea18925
+		sourceLineageTag: PARAMETER_FIELD_NAME
+		summarizeBy: none
+		sourceColumn: PARAMETER_FIELD_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARAMETER_WITH_UNITS_FIELD_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a5d15535-8319-464f-a4c6-b7fcd31ba256
+		sourceLineageTag: PARAMETER_WITH_UNITS_FIELD_NAME
+		summarizeBy: none
+		sourceColumn: PARAMETER_WITH_UNITS_FIELD_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARAMETER_UNITS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 28ef5796-0c00-4913-a6e5-386c69749657
+		sourceLineageTag: PARAMETER_UNITS
+		summarizeBy: none
+		sourceColumn: PARAMETER_UNITS
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARAMETER_ENTRYQUAL_FIELD_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 226022a7-5291-440c-b412-5d4e2966ebb7
+		sourceLineageTag: PARAMETER_ENTRYQUAL_FIELD_NAME
+		summarizeBy: none
+		sourceColumn: PARAMETER_ENTRYQUAL_FIELD_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column TEXT_PARAMETER_VALUE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 58316900-da1a-41ee-bdb2-50e5aecabbff
+		sourceLineageTag: TEXT_PARAMETER_VALUE
+		summarizeBy: none
+		sourceColumn: TEXT_PARAMETER_VALUE
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATE_PARAMETER_VALUE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 429abe59-56cd-4c0e-9fb5-835c14074620
+		sourceLineageTag: DATE_PARAMETER_VALUE
+		summarizeBy: none
+		sourceColumn: DATE_PARAMETER_VALUE
+
+		annotation SummarizationSetBy = Automatic
+
+	column NUMERIC_PARAMETER_VALUE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c5914ddc-5c8d-42a1-925e-07f18a320bc4
+		sourceLineageTag: NUMERIC_PARAMETER_VALUE
+		summarizeBy: none
+		sourceColumn: NUMERIC_PARAMETER_VALUE
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARAMETER_ENTRY_QUALIFIER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f0ef07e7-6da0-4aae-baff-4a317672397f
+		sourceLineageTag: PARAMETER_ENTRY_QUALIFIER
+		summarizeBy: none
+		sourceColumn: PARAMETER_ENTRY_QUALIFIER
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOURCE_SYSTEM
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4efdef15-1270-460d-8efe-454dc7a5eee4
+		sourceLineageTag: SOURCE_SYSTEM
+		summarizeBy: none
+		sourceColumn: SOURCE_SYSTEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOURCE_APPROVAL_STATUS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e820e296-5267-40ea-80b3-f38be27dca4f
+		sourceLineageTag: SOURCE_APPROVAL_STATUS
+		summarizeBy: none
+		sourceColumn: SOURCE_APPROVAL_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column INFORMA_APPROVAL_STATUS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: cb73ce54-6c1b-47ef-af22-bec198567ac6
+		sourceLineageTag: INFORMA_APPROVAL_STATUS
+		summarizeBy: none
+		sourceColumn: INFORMA_APPROVAL_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column LAST_MODIFICATION_DATE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e4a8a4b7-1252-47f8-aff8-891720a6a954
+		sourceLineageTag: LAST_MODIFICATION_DATE
+		summarizeBy: none
+		sourceColumn: LAST_MODIFICATION_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column LAST_DATA_EXTRACTION_DATE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b5007889-6409-4679-93e9-3039c9a57005
+		sourceLineageTag: LAST_DATA_EXTRACTION_DATE
+		summarizeBy: none
+		sourceColumn: LAST_DATA_EXTRACTION_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SAMPLING_POINT_MAPPING_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2ae056ee-40e2-4490-9a37-ffc09ed6ebeb
+		sourceLineageTag: SAMPLING_POINT_MAPPING_ID
+		summarizeBy: none
+		sourceColumn: SAMPLING_POINT_MAPPING_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PARAMETER_MAPPING_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ab46a51c-9528-42f2-b0a7-5549eb158f1e
+		sourceLineageTag: PARAMETER_MAPPING_ID
+		summarizeBy: none
+		sourceColumn: PARAMETER_MAPPING_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CORRECTION_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8a782b50-9238-4799-9352-2fb6b44f7399
+		sourceLineageTag: CORRECTION_ID
+		summarizeBy: none
+		sourceColumn: CORRECTION_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition informa-filtered = entity
+		mode: directLake
+		source
+			entityName: informa-filtered
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

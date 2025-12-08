@@ -1,0 +1,33 @@
+table masterentity
+	lineageTag: bf45beac-56a9-428a-8055-8d509b31c570
+	sourceLineageTag: [dbo].[masterentity]
+
+	column MasterEntityId
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4f59accd-2d81-49de-8497-dd0eaaa2367c
+		sourceLineageTag: MasterEntityId
+		summarizeBy: none
+		sourceColumn: MasterEntityId
+
+		annotation SummarizationSetBy = Automatic
+
+	column NameText
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 90dabf15-cd7c-4188-9a44-1834f316a460
+		sourceLineageTag: NameText
+		summarizeBy: none
+		sourceColumn: NameText
+
+		annotation SummarizationSetBy = Automatic
+
+	partition masterentity-f91c5a0e-2ff2-43d2-9975-280086946d7c = entity
+		mode: directLake
+		source
+			entityName: masterentity
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

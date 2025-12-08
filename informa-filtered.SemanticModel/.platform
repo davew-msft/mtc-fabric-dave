@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "informa-filtered"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f9fa5bbd-1452-9a16-4ad4-664624e70204"
+  }
+}

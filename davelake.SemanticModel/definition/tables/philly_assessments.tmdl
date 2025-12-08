@@ -1,0 +1,124 @@
+table philly_assessments
+	lineageTag: b99d6429-50fc-4407-89c9-94df575f5277
+	sourceLineageTag: [dbo].[philly_assessments]
+
+	column cartodb_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: ceee3fea-b013-4985-a785-57d84fbacad9
+		sourceLineageTag: cartodb_id
+		summarizeBy: sum
+		sourceColumn: cartodb_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column exempt_building
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 6822f48c-2617-414c-a2bc-51d63e32c3f8
+		sourceLineageTag: exempt_building
+		summarizeBy: sum
+		sourceColumn: exempt_building
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column exempt_land
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 824f48cd-167d-411d-adfd-0eb7b6c62321
+		sourceLineageTag: exempt_land
+		summarizeBy: sum
+		sourceColumn: exempt_land
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column market_value
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 6aa29e34-f59f-4470-b5ab-0710473f7a3b
+		sourceLineageTag: market_value
+		summarizeBy: sum
+		sourceColumn: market_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_number
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f28fc72d-8bc8-4635-89b3-606bc1baee89
+		sourceLineageTag: parcel_number
+		summarizeBy: none
+		sourceColumn: parcel_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column taxable_building
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 2377b0d5-e357-4466-bb2e-245027ebe08d
+		sourceLineageTag: taxable_building
+		summarizeBy: sum
+		sourceColumn: taxable_building
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taxable_land
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 5fde17a0-8620-4b77-abe6-e0b98db0b835
+		sourceLineageTag: taxable_land
+		summarizeBy: sum
+		sourceColumn: taxable_land
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column the_geom
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 32320a93-3183-42eb-bab7-095e32b4f51b
+		sourceLineageTag: the_geom
+		summarizeBy: none
+		sourceColumn: the_geom
+
+		annotation SummarizationSetBy = Automatic
+
+	column the_geom_webmercator
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 28b8f493-f26f-4ec5-a982-c56722138ed8
+		sourceLineageTag: the_geom_webmercator
+		summarizeBy: none
+		sourceColumn: the_geom_webmercator
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 8f56c5ad-d4c7-4e43-91a3-ecb59f9f481d
+		sourceLineageTag: year
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition philly_assessments-2208e739-0c19-4125-941b-da266d67e6a5 = entity
+		mode: directLake
+		source
+			entityName: philly_assessments
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

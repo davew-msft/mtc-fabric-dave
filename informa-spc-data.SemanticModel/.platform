@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "informa-spc-data"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "655f800a-bcba-a822-49f1-5709d6049f9c"
+  }
+}

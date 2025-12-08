@@ -1,0 +1,218 @@
+table exec_requests_history
+	lineageTag: 25d227ac-ee2c-4aef-b4e6-508d8c116620
+	sourceLineageTag: [queryinsights].[exec_requests_history]
+
+	column start_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8a3ead50-7c1f-4417-8e9c-1983dc6bf4d5
+		sourceLineageTag: start_time
+		summarizeBy: none
+		sourceColumn: start_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b28e093f-dc55-423a-b3db-30a512c4bd3c
+		sourceLineageTag: end_time
+		summarizeBy: none
+		sourceColumn: end_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_elapsed_time_ms
+		dataType: int64
+		formatString: 0
+		lineageTag: 0de9fb14-80d8-40f8-8d92-8e9f6b1d59c7
+		sourceLineageTag: total_elapsed_time_ms
+		summarizeBy: sum
+		sourceColumn: total_elapsed_time_ms
+
+		annotation SummarizationSetBy = Automatic
+
+	column login_name
+		dataType: string
+		lineageTag: f264e463-505c-462d-a870-f496b69e6934
+		sourceLineageTag: login_name
+		summarizeBy: none
+		sourceColumn: login_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column row_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 3d999bcd-606a-4fef-886d-9ee97c94c83c
+		sourceLineageTag: row_count
+		summarizeBy: sum
+		sourceColumn: row_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 13208a13-82cb-4530-b5c4-6c10ca66b2d6
+		sourceLineageTag: status
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column session_id
+		dataType: int64
+		formatString: 0
+		lineageTag: b52e2b1a-959d-4fbc-913f-5711f0fa5a25
+		sourceLineageTag: session_id
+		summarizeBy: sum
+		sourceColumn: session_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column program_name
+		dataType: string
+		lineageTag: fab0df0e-5cb6-41b5-bffa-329d52a044cf
+		sourceLineageTag: program_name
+		summarizeBy: none
+		sourceColumn: program_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column query_hash
+		dataType: string
+		lineageTag: ea65aeb7-f15c-465f-941c-302a4641e3ff
+		sourceLineageTag: query_hash
+		summarizeBy: none
+		sourceColumn: query_hash
+
+		annotation SummarizationSetBy = Automatic
+
+	column command
+		dataType: string
+		lineageTag: 7ecd43c6-5aa6-4e36-98a4-f1138737f19f
+		sourceLineageTag: command
+		summarizeBy: none
+		sourceColumn: command
+
+		annotation SummarizationSetBy = Automatic
+
+	column submit_time
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 3e56fd23-6e6a-42d9-afde-902515be32cf
+		sourceLineageTag: submit_time
+		summarizeBy: none
+		sourceColumn: submit_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column label
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: df4a04b1-f2ac-466b-8580-373173459ebf
+		sourceLineageTag: label
+		summarizeBy: none
+		sourceColumn: label
+
+		annotation SummarizationSetBy = Automatic
+
+	column result_cache_hit
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: dc8aee4b-34c2-452d-95ee-b4e0be35b6bc
+		sourceLineageTag: result_cache_hit
+		summarizeBy: sum
+		sourceColumn: result_cache_hit
+
+		annotation SummarizationSetBy = Automatic
+
+	column allocated_cpu_time_ms
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f94d2a81-dd20-451a-a914-f1b52209672e
+		sourceLineageTag: allocated_cpu_time_ms
+		summarizeBy: sum
+		sourceColumn: allocated_cpu_time_ms
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_scanned_remote_storage_mb
+		dataType: double
+		sourceProviderType: decimal
+		lineageTag: b8df96e2-09d7-49e2-ba50-fc3a968f3442
+		sourceLineageTag: data_scanned_remote_storage_mb
+		summarizeBy: sum
+		sourceColumn: data_scanned_remote_storage_mb
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column data_scanned_memory_mb
+		dataType: double
+		sourceProviderType: decimal
+		lineageTag: 20261595-3c66-4d51-a2e0-39547c89e511
+		sourceLineageTag: data_scanned_memory_mb
+		summarizeBy: sum
+		sourceColumn: data_scanned_memory_mb
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column data_scanned_disk_mb
+		dataType: double
+		sourceProviderType: decimal
+		lineageTag: f799e126-c74c-4b48-9854-574ee3545024
+		sourceLineageTag: data_scanned_disk_mb
+		summarizeBy: sum
+		sourceColumn: data_scanned_disk_mb
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column database_name
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 5070ab1b-2ff0-4169-bdea-af10a22c3d69
+		sourceLineageTag: database_name
+		summarizeBy: none
+		sourceColumn: database_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_distributed
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 3c3ed8a4-d39a-4fc4-aae8-c7d42928108b
+		sourceLineageTag: is_distributed
+		summarizeBy: sum
+		sourceColumn: is_distributed
+
+		annotation SummarizationSetBy = Automatic
+
+	column statement_type
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 6748ff53-13bf-44e9-81ef-b746e0e02f04
+		sourceLineageTag: statement_type
+		summarizeBy: none
+		sourceColumn: statement_type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition exec_requests_history-7fe60eab-009d-480a-abbe-183888fcbfd5 = entity
+		mode: directLake
+		source
+			entityName: exec_requests_history
+			schemaName: queryinsights
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

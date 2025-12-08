@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SQLDatabase",
+    "displayName": "phillystats-sqldb"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c4bd4920-e3bd-9ace-4a41-db5ba46da0a6"
+  }
+}

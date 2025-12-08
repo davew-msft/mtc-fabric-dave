@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "cert-auth"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8d70115d-41ce-9a58-402f-cf4598561640"
+  }
+}

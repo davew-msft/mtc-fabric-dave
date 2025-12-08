@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataAgent",
+    "displayName": "davew-FDA"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2b3ef055-6839-8658-4580-b619319af8db"
+  }
+}

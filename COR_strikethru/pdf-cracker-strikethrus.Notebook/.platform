@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "pdf-cracker-strikethrus"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "587570a3-7244-a97c-486a-7e2517b61770"
+  }
+}

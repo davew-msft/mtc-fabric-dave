@@ -1,0 +1,613 @@
+table philly_real_estate_tax_balances
+	lineageTag: 881d31d3-110d-43f9-b0d1-ca1387f41f2e
+	sourceLineageTag: [dbo].[philly_real_estate_tax_balances]
+
+	column objectid
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 79c1e97c-96aa-447b-8b5b-e24015e5bff6
+		sourceLineageTag: objectid
+		summarizeBy: none
+		sourceColumn: objectid
+
+		annotation SummarizationSetBy = Automatic
+
+	column opa_number
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 9f47893b-03b1-40b9-a6de-08ad093c5f40
+		sourceLineageTag: opa_number
+		summarizeBy: none
+		sourceColumn: opa_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column street_address
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 6b2d55bd-63c8-4cc4-b940-32f06da2ff78
+		sourceLineageTag: street_address
+		summarizeBy: none
+		sourceColumn: street_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column zip_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c7eccbad-a1af-4e4d-a943-d231366e3481
+		sourceLineageTag: zip_code
+		summarizeBy: none
+		sourceColumn: zip_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column zip_4
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 49631964-9fad-46e4-ba19-f2826e818bda
+		sourceLineageTag: zip_4
+		summarizeBy: none
+		sourceColumn: zip_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_type
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e8d40b25-a38a-45a2-af0e-9be4b6653982
+		sourceLineageTag: unit_type
+		summarizeBy: none
+		sourceColumn: unit_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_num
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ce551a81-51dd-4e87-9e17-0553b3796cbb
+		sourceLineageTag: unit_num
+		summarizeBy: none
+		sourceColumn: unit_num
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_address
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: b6ae0d66-4d1f-42fa-938c-8a25492d558d
+		sourceLineageTag: mailing_address
+		summarizeBy: none
+		sourceColumn: mailing_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_city
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: b1827639-fac9-4801-af3d-395c5c350c5c
+		sourceLineageTag: mailing_city
+		summarizeBy: none
+		sourceColumn: mailing_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_state
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2cdd7981-cd20-4dcd-9467-bc4f4f420836
+		sourceLineageTag: mailing_state
+		summarizeBy: none
+		sourceColumn: mailing_state
+
+		annotation SummarizationSetBy = Automatic
+
+	column mailing_zip
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: d1030556-b834-45e8-9d05-b91874f45d47
+		sourceLineageTag: mailing_zip
+		summarizeBy: none
+		sourceColumn: mailing_zip
+
+		annotation SummarizationSetBy = Automatic
+
+	column return_mail
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e7212363-6fb9-440f-ace6-c2c011c80aa0
+		sourceLineageTag: return_mail
+		summarizeBy: none
+		sourceColumn: return_mail
+
+		annotation SummarizationSetBy = Automatic
+
+	column bldg_land_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f33d25c9-64aa-4514-9597-7b199bb6d69a
+		sourceLineageTag: bldg_land_code
+		summarizeBy: none
+		sourceColumn: bldg_land_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column land_use_code_description
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 51b0fc9d-759e-4d1c-a4df-9e98375fd496
+		sourceLineageTag: land_use_code_description
+		summarizeBy: none
+		sourceColumn: land_use_code_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column building_code_description
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a56370c7-1d46-467b-8e24-c557950ebee1
+		sourceLineageTag: building_code_description
+		summarizeBy: none
+		sourceColumn: building_code_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column category_code_description
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 8b638450-78dd-4d5b-869b-868d5566e152
+		sourceLineageTag: category_code_description
+		summarizeBy: none
+		sourceColumn: category_code_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column bldg_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 21a7c181-7d5e-4362-aa70-0a5831a76c3b
+		sourceLineageTag: bldg_code
+		summarizeBy: none
+		sourceColumn: bldg_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column bldg_class_code
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: d31975fc-50a6-4e2d-9cf4-d36f19353d3a
+		sourceLineageTag: bldg_class_code
+		summarizeBy: none
+		sourceColumn: bldg_class_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column owner
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 559a5efb-a60b-4675-a40c-f9cce063207b
+		sourceLineageTag: owner
+		summarizeBy: none
+		sourceColumn: owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column co_owner
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2e75c3cb-4621-4f38-852d-dad6dd0dc4cc
+		sourceLineageTag: co_owner
+		summarizeBy: none
+		sourceColumn: co_owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column most_recent_payment_date
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0c972504-e56f-46d5-9956-e309e5811e25
+		sourceLineageTag: most_recent_payment_date
+		summarizeBy: none
+		sourceColumn: most_recent_payment_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column principal_due
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 92bd5cfe-1a90-47a7-b620-a602244b91d3
+		sourceLineageTag: principal_due
+		summarizeBy: none
+		sourceColumn: principal_due
+
+		annotation SummarizationSetBy = Automatic
+
+	column interest_due
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f1878459-80a8-4d3d-97d0-a76a939b1852
+		sourceLineageTag: interest_due
+		summarizeBy: none
+		sourceColumn: interest_due
+
+		annotation SummarizationSetBy = Automatic
+
+	column penalty_due
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 24bab843-39e5-415f-8e12-4571d63dbe1d
+		sourceLineageTag: penalty_due
+		summarizeBy: none
+		sourceColumn: penalty_due
+
+		annotation SummarizationSetBy = Automatic
+
+	column other_charges_due
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e127e15e-62d0-4228-ab2e-58ff68cec5a5
+		sourceLineageTag: other_charges_due
+		summarizeBy: none
+		sourceColumn: other_charges_due
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_due
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 82318bec-7308-41b7-b5fe-5a75b50aadf7
+		sourceLineageTag: total_due
+		summarizeBy: none
+		sourceColumn: total_due
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_years_owed
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c0f70015-434c-47c4-9499-157b0aad9a9b
+		sourceLineageTag: num_years_owed
+		summarizeBy: none
+		sourceColumn: num_years_owed
+
+		annotation SummarizationSetBy = Automatic
+
+	column most_recent_year_owed
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c3a187a7-63c3-42fd-bf5d-5ff77ed34ade
+		sourceLineageTag: most_recent_year_owed
+		summarizeBy: none
+		sourceColumn: most_recent_year_owed
+
+		annotation SummarizationSetBy = Automatic
+
+	column oldest_year_owed
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 743ca0b6-1413-4449-9ccb-0beb9c7e7345
+		sourceLineageTag: oldest_year_owed
+		summarizeBy: none
+		sourceColumn: oldest_year_owed
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_actionable
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 8577d97f-cba5-406a-9409-5ac01df2533c
+		sourceLineageTag: is_actionable
+		summarizeBy: none
+		sourceColumn: is_actionable
+
+		annotation SummarizationSetBy = Automatic
+
+	column agreement_agency
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 39528ace-01f2-49d8-92bb-f58aab0494f3
+		sourceLineageTag: agreement_agency
+		summarizeBy: none
+		sourceColumn: agreement_agency
+
+		annotation SummarizationSetBy = Automatic
+
+	column coll_agency_num_years
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2db13b38-4280-478f-8e5c-9868ada44406
+		sourceLineageTag: coll_agency_num_years
+		summarizeBy: none
+		sourceColumn: coll_agency_num_years
+
+		annotation SummarizationSetBy = Automatic
+
+	column coll_agency_most_recent_year
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 37fa783a-6835-4d17-af80-8ca98cab141f
+		sourceLineageTag: coll_agency_most_recent_year
+		summarizeBy: none
+		sourceColumn: coll_agency_most_recent_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column coll_agency_oldest_year
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 44c39d66-0992-45dc-b92a-0f09f175638b
+		sourceLineageTag: coll_agency_oldest_year
+		summarizeBy: none
+		sourceColumn: coll_agency_oldest_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column coll_agency_principal_owed
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c63d6053-c144-4606-b9fd-f859099c8441
+		sourceLineageTag: coll_agency_principal_owed
+		summarizeBy: none
+		sourceColumn: coll_agency_principal_owed
+
+		annotation SummarizationSetBy = Automatic
+
+	column coll_agency_total_owed
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: de3eb9ce-b70f-43e1-b110-80e1ad5f98e1
+		sourceLineageTag: coll_agency_total_owed
+		summarizeBy: none
+		sourceColumn: coll_agency_total_owed
+
+		annotation SummarizationSetBy = Automatic
+
+	column bankruptcy
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a2051749-c9b3-4f84-a0c2-83eaab26adcc
+		sourceLineageTag: bankruptcy
+		summarizeBy: none
+		sourceColumn: bankruptcy
+
+		annotation SummarizationSetBy = Automatic
+
+	column years_in_bankruptcy
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 5635e8fe-3fb4-41e0-835f-b15c1271fa3c
+		sourceLineageTag: years_in_bankruptcy
+		summarizeBy: none
+		sourceColumn: years_in_bankruptcy
+
+		annotation SummarizationSetBy = Automatic
+
+	column most_recent_bankrupt_year
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 741485aa-06f4-4a1c-bea7-a63d65a61605
+		sourceLineageTag: most_recent_bankrupt_year
+		summarizeBy: none
+		sourceColumn: most_recent_bankrupt_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column oldest_bankrupt_year
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: d1b314c7-3122-4bb4-8a55-21ae2438c8f5
+		sourceLineageTag: oldest_bankrupt_year
+		summarizeBy: none
+		sourceColumn: oldest_bankrupt_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column principal_sum_bankrupt_years
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 781c81fb-ae9d-42a8-8313-b9dbe40e134e
+		sourceLineageTag: principal_sum_bankrupt_years
+		summarizeBy: none
+		sourceColumn: principal_sum_bankrupt_years
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_amount_bankrupt_years
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 30649386-2c7c-418a-88bc-ecaf5349f4b8
+		sourceLineageTag: total_amount_bankrupt_years
+		summarizeBy: none
+		sourceColumn: total_amount_bankrupt_years
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_agreement
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 7be414bb-1cce-4ac5-99d9-68239019315c
+		sourceLineageTag: payment_agreement
+		summarizeBy: none
+		sourceColumn: payment_agreement
+
+		annotation SummarizationSetBy = Automatic
+
+	column sequestration_enforcement
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 37a8bd3e-0b98-4c43-95b8-bf698140219e
+		sourceLineageTag: sequestration_enforcement
+		summarizeBy: none
+		sourceColumn: sequestration_enforcement
+
+		annotation SummarizationSetBy = Automatic
+
+	column sheriff_sale
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 0825eb2a-6910-40d8-82a0-16b5a44f3621
+		sourceLineageTag: sheriff_sale
+		summarizeBy: none
+		sourceColumn: sheriff_sale
+
+		annotation SummarizationSetBy = Automatic
+
+	column liens_sold_1990s
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 965d2774-8316-4da9-ae1b-6e75caa64a22
+		sourceLineageTag: liens_sold_1990s
+		summarizeBy: none
+		sourceColumn: liens_sold_1990s
+
+		annotation SummarizationSetBy = Automatic
+
+	column liens_sold_2015
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e8966623-40cb-4aa3-a965-ad09f51165f5
+		sourceLineageTag: liens_sold_2015
+		summarizeBy: none
+		sourceColumn: liens_sold_2015
+
+		annotation SummarizationSetBy = Automatic
+
+	column assessment_under_appeal
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 69d2242a-61e6-40d7-8f26-66f1719700d6
+		sourceLineageTag: assessment_under_appeal
+		summarizeBy: none
+		sourceColumn: assessment_under_appeal
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_of_last_assessment
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 9dd783c8-d8cc-443f-b1b7-0ff224b7b6b6
+		sourceLineageTag: year_of_last_assessment
+		summarizeBy: none
+		sourceColumn: year_of_last_assessment
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_assessment
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: c5b8bd36-3af9-4f2c-86a4-82bc9396f707
+		sourceLineageTag: total_assessment
+		summarizeBy: none
+		sourceColumn: total_assessment
+
+		annotation SummarizationSetBy = Automatic
+
+	column taxable_assessment
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ec0607b9-6169-4ef3-97c9-a3b90d71bcdf
+		sourceLineageTag: taxable_assessment
+		summarizeBy: none
+		sourceColumn: taxable_assessment
+
+		annotation SummarizationSetBy = Automatic
+
+	column homestead_value
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a92fd140-d87f-4cc2-8e76-dbb0453086a4
+		sourceLineageTag: homestead_value
+		summarizeBy: none
+		sourceColumn: homestead_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column exempt_abatement_assessment
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: d5ca67bc-b208-4cab-81ac-e35064e767c2
+		sourceLineageTag: exempt_abatement_assessment
+		summarizeBy: none
+		sourceColumn: exempt_abatement_assessment
+
+		annotation SummarizationSetBy = Automatic
+
+	column net_tax_value_after_homestead
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a0980839-64ca-4ab2-a957-9eabac69748b
+		sourceLineageTag: net_tax_value_after_homestead
+		summarizeBy: none
+		sourceColumn: net_tax_value_after_homestead
+
+		annotation SummarizationSetBy = Automatic
+
+	column geocode_x
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 8bb1527d-8901-4b0e-9690-634514b539ca
+		sourceLineageTag: geocode_x
+		summarizeBy: none
+		sourceColumn: geocode_x
+
+		annotation SummarizationSetBy = Automatic
+
+	column geocode_y
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 36a3614e-e316-4b6f-821f-745ff944c464
+		sourceLineageTag: geocode_y
+		summarizeBy: none
+		sourceColumn: geocode_y
+
+		annotation SummarizationSetBy = Automatic
+
+	column geocode_lat
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 1600ffc1-9114-4505-8624-00a0f7e88bcf
+		sourceLineageTag: geocode_lat
+		summarizeBy: none
+		sourceColumn: geocode_lat
+
+		annotation SummarizationSetBy = Automatic
+
+	column geocode_lon
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: bf820d6d-aee4-4d9f-be23-db72661ef4a5
+		sourceLineageTag: geocode_lon
+		summarizeBy: none
+		sourceColumn: geocode_lon
+
+		annotation SummarizationSetBy = Automatic
+
+	column x
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 2df486f8-141e-48f3-9c5e-92a61e705fba
+		sourceLineageTag: x
+		summarizeBy: none
+		sourceColumn: x
+
+		annotation SummarizationSetBy = Automatic
+
+	column y
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: fb598f4f-0d3f-44bf-b59c-7cb0fc5ba9a2
+		sourceLineageTag: y
+		summarizeBy: none
+		sourceColumn: y
+
+		annotation SummarizationSetBy = Automatic
+
+	partition philly_real_estate_tax_balances-772ab2cd-1471-4668-a9f5-969107c8d101 = entity
+		mode: directLake
+		source
+			entityName: philly_real_estate_tax_balances
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

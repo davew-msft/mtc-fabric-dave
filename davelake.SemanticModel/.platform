@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "davelake"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "de5d2d90-392e-9bde-4af0-5897814e45bf"
+  }
+}

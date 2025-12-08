@@ -1,0 +1,265 @@
+table philly_com_act_licenses
+	lineageTag: 0fd9fb90-b428-4515-a2e1-e2a77994b2b1
+	sourceLineageTag: [dbo].[philly_com_act_licenses]
+
+	column cartodb_id
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: cfd7e48c-b5d0-448b-a96f-a970e9863787
+		sourceLineageTag: cartodb_id
+		summarizeBy: sum
+		sourceColumn: cartodb_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column companyname
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: b86cba87-9513-460a-887f-3112bb786a61
+		sourceLineageTag: companyname
+		summarizeBy: none
+		sourceColumn: companyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column issuedate
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e1a81f86-3380-489b-ad4f-ae2cea44ff8d
+		sourceLineageTag: issuedate
+		summarizeBy: none
+		sourceColumn: issuedate
+
+		annotation SummarizationSetBy = Automatic
+
+	column legalentitytype
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 25f4e52b-ac84-46b4-97d5-5817db413227
+		sourceLineageTag: legalentitytype
+		summarizeBy: none
+		sourceColumn: legalentitytype
+
+		annotation SummarizationSetBy = Automatic
+
+	column legalfirstname
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4f57b369-c944-4794-bba8-61099f6f0b3c
+		sourceLineageTag: legalfirstname
+		summarizeBy: none
+		sourceColumn: legalfirstname
+
+		annotation SummarizationSetBy = Automatic
+
+	column legallastname
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: cc2d789f-69a0-4c26-b98b-dab64224c93a
+		sourceLineageTag: legallastname
+		summarizeBy: none
+		sourceColumn: legallastname
+
+		annotation SummarizationSetBy = Automatic
+
+	column licensenum
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 932f16c0-827c-41af-8615-36fa831c8db2
+		sourceLineageTag: licensenum
+		summarizeBy: none
+		sourceColumn: licensenum
+
+		annotation SummarizationSetBy = Automatic
+
+	column licensestatus
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: a096ffa6-4a3f-4051-acf4-14611df543c3
+		sourceLineageTag: licensestatus
+		summarizeBy: none
+		sourceColumn: licensestatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column licensetype
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e33c5dbf-721e-468f-8b33-3b3d14cc45c3
+		sourceLineageTag: licensetype
+		summarizeBy: none
+		sourceColumn: licensetype
+
+		annotation SummarizationSetBy = Automatic
+
+	column objectid
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: c76827df-8913-4289-918f-1e11ceac3a54
+		sourceLineageTag: objectid
+		summarizeBy: sum
+		sourceColumn: objectid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact1city
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 1027287c-1840-4455-8f8e-307ce90ea7b2
+		sourceLineageTag: ownercontact1city
+		summarizeBy: none
+		sourceColumn: ownercontact1city
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact1mailingaddress
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: fd33d489-a8ef-4a44-a6c2-5c7b3c2c311f
+		sourceLineageTag: ownercontact1mailingaddress
+		summarizeBy: none
+		sourceColumn: ownercontact1mailingaddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact1name
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 222557ae-fedb-4e0b-8a41-982a32cbf7cf
+		sourceLineageTag: ownercontact1name
+		summarizeBy: none
+		sourceColumn: ownercontact1name
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact1state
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ec53ce33-19aa-4226-9158-aa79dfab324b
+		sourceLineageTag: ownercontact1state
+		summarizeBy: none
+		sourceColumn: ownercontact1state
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact1zippostalcode
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 613bd838-da49-4a46-84b4-84d5057e8eb6
+		sourceLineageTag: ownercontact1zippostalcode
+		summarizeBy: none
+		sourceColumn: ownercontact1zippostalcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact2city
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4c5c5cf4-2152-41f8-83a8-6dc914aad472
+		sourceLineageTag: ownercontact2city
+		summarizeBy: none
+		sourceColumn: ownercontact2city
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact2mailingaddress
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f1eaa1fe-b405-4a46-b511-cad048735c3b
+		sourceLineageTag: ownercontact2mailingaddress
+		summarizeBy: none
+		sourceColumn: ownercontact2mailingaddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact2name
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 84a2ceb6-de3a-43e8-88ed-22719af7c2bc
+		sourceLineageTag: ownercontact2name
+		summarizeBy: none
+		sourceColumn: ownercontact2name
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact2state
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 84f34f6e-8444-4bf3-8686-293de0af82ac
+		sourceLineageTag: ownercontact2state
+		summarizeBy: none
+		sourceColumn: ownercontact2state
+
+		annotation SummarizationSetBy = Automatic
+
+	column ownercontact2zippostalcode
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 16f68b18-53d4-4c4c-bf67-ee48094849bc
+		sourceLineageTag: ownercontact2zippostalcode
+		summarizeBy: none
+		sourceColumn: ownercontact2zippostalcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column posse_jobid
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 76e0349e-383a-460b-8f6d-c675bd5700ca
+		sourceLineageTag: posse_jobid
+		summarizeBy: none
+		sourceColumn: posse_jobid
+
+		annotation SummarizationSetBy = Automatic
+
+	column revenuecode
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f2f6bd96-62c3-48f1-afe9-d5c878446284
+		sourceLineageTag: revenuecode
+		summarizeBy: none
+		sourceColumn: revenuecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column the_geom
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 8788bd47-743c-4ba8-8ef4-fb3584355f1f
+		sourceLineageTag: the_geom
+		summarizeBy: none
+		sourceColumn: the_geom
+
+		annotation SummarizationSetBy = Automatic
+
+	column the_geom_webmercator
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: b200e9ec-8916-443d-8557-40711dd785b1
+		sourceLineageTag: the_geom_webmercator
+		summarizeBy: none
+		sourceColumn: the_geom_webmercator
+
+		annotation SummarizationSetBy = Automatic
+
+	column legalentityid
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 727f5570-4b83-467c-aa4d-0eff7ebf08b0
+		sourceLineageTag: legalentityid
+		summarizeBy: none
+		sourceColumn: legalentityid
+
+		annotation SummarizationSetBy = Automatic
+
+	partition philly_com_act_licenses-c1a8ce90-2df8-4097-bcb1-81688fae22cf = entity
+		mode: directLake
+		source
+			entityName: philly_com_act_licenses
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

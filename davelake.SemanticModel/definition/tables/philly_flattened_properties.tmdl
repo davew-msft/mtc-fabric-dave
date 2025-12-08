@@ -1,0 +1,293 @@
+table philly_flattened_properties
+	lineageTag: 29b4830e-1535-4ac6-ad80-0fa94be0efe4
+	sourceLineageTag: [dbo].[philly_flattened_properties]
+
+	column parcel_number
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ae54ac78-db53-4935-bb17-c3b83a69fc44
+		sourceLineageTag: parcel_number
+		summarizeBy: none
+		sourceColumn: parcel_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: ea251950-bff0-4557-bfc0-0512c0abf10b
+		sourceLineageTag: location
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column owner_1
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4f277a86-4086-4096-9f78-ba43473237bc
+		sourceLineageTag: owner_1
+		summarizeBy: none
+		sourceColumn: owner_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column owner_2
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: fb7e3ffc-4f58-4d5a-ac60-d2da0333449f
+		sourceLineageTag: owner_2
+		summarizeBy: none
+		sourceColumn: owner_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column homestead_exemption
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 5f52d3d3-9648-4fc8-bc81-e6260debbf1d
+		sourceLineageTag: homestead_exemption
+		summarizeBy: sum
+		sourceColumn: homestead_exemption
+
+		annotation SummarizationSetBy = Automatic
+
+	column zoning
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: d2f169c2-fd04-4151-9e24-b27f123eccc3
+		sourceLineageTag: zoning
+		summarizeBy: none
+		sourceColumn: zoning
+
+		annotation SummarizationSetBy = Automatic
+
+	column F1_Repairs
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ad9713e9-a409-4b55-b555-2dd9dacbd270
+		sourceLineageTag: F1_Repairs
+		summarizeBy: sum
+		sourceColumn: F1_Repairs
+
+		annotation SummarizationSetBy = Automatic
+
+	column F2_CodeViolations
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 9d25e540-6fd0-44ac-bf96-4c62c22892e5
+		sourceLineageTag: F2_CodeViolations
+		summarizeBy: sum
+		sourceColumn: F2_CodeViolations
+
+		annotation SummarizationSetBy = Automatic
+
+	column F3_TaxesAndDebt
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: d34af9b0-072f-4d3e-9a3c-54541a0eb1df
+		sourceLineageTag: F3_TaxesAndDebt
+		summarizeBy: sum
+		sourceColumn: F3_TaxesAndDebt
+
+		annotation SummarizationSetBy = Automatic
+
+	column F4_CityResources
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 9f017541-9018-4d65-9ff4-0c7d3552d72f
+		sourceLineageTag: F4_CityResources
+		summarizeBy: sum
+		sourceColumn: F4_CityResources
+
+		annotation SummarizationSetBy = Automatic
+
+	column F5_Licenses
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: cf6547b3-39e6-4baf-9198-14925e3f8b8d
+		sourceLineageTag: F5_Licenses
+		summarizeBy: sum
+		sourceColumn: F5_Licenses
+
+		annotation SummarizationSetBy = Automatic
+
+	column F6_CorpStructures
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 12e39cde-07ff-4d24-8f5d-571258066d98
+		sourceLineageTag: F6_CorpStructures
+		summarizeBy: sum
+		sourceColumn: F6_CorpStructures
+
+		annotation SummarizationSetBy = Automatic
+
+	column F7_Nuisances
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 9fded424-65b5-4d2e-9ad0-2c6eaaead7d9
+		sourceLineageTag: F7_Nuisances
+		summarizeBy: sum
+		sourceColumn: F7_Nuisances
+
+		annotation SummarizationSetBy = Automatic
+
+	column F8_Insurance
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 22cb61bb-b39b-4039-a209-b1482fd907ae
+		sourceLineageTag: F8_Insurance
+		summarizeBy: sum
+		sourceColumn: F8_Insurance
+
+		annotation SummarizationSetBy = Automatic
+
+	column F9_Zoning
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: bbdc3ed0-a5e3-4c37-a25e-b77e36e96bbb
+		sourceLineageTag: F9_Zoning
+		summarizeBy: sum
+		sourceColumn: F9_Zoning
+
+		annotation SummarizationSetBy = Automatic
+
+	column F10_SheriffSalePurchase
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 2adc8c37-e6a4-4889-bdde-02db65d38bee
+		sourceLineageTag: F10_SheriffSalePurchase
+		summarizeBy: sum
+		sourceColumn: F10_SheriffSalePurchase
+
+		annotation SummarizationSetBy = Automatic
+
+	column F11_AvoidSquatters
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0dee2abe-8b4b-401b-bca5-4308a2c57b9b
+		sourceLineageTag: F11_AvoidSquatters
+		summarizeBy: sum
+		sourceColumn: F11_AvoidSquatters
+
+		annotation SummarizationSetBy = Automatic
+
+	column F12_LengthOfOwnership
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: a9e41f1e-7f35-4aa1-a297-a3763ab4f7df
+		sourceLineageTag: F12_LengthOfOwnership
+		summarizeBy: sum
+		sourceColumn: F12_LengthOfOwnership
+
+		annotation SummarizationSetBy = Automatic
+
+	column F13_HomeValueAppreciation
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: fe9800d7-15ae-4851-a862-8697a0224f03
+		sourceLineageTag: F13_HomeValueAppreciation
+		summarizeBy: sum
+		sourceColumn: F13_HomeValueAppreciation
+
+		annotation SummarizationSetBy = Automatic
+
+	column F14_BusinessesInArea
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c535fc76-7b99-4f8c-b398-c194f17dc1be
+		sourceLineageTag: F14_BusinessesInArea
+		summarizeBy: sum
+		sourceColumn: F14_BusinessesInArea
+
+		annotation SummarizationSetBy = Automatic
+
+	column F15_NeighborhoodVacantLots
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ee95ec2d-5396-428e-9412-feda1a184540
+		sourceLineageTag: F15_NeighborhoodVacantLots
+		summarizeBy: sum
+		sourceColumn: F15_NeighborhoodVacantLots
+
+		annotation SummarizationSetBy = Automatic
+
+	column F16_LocalInvestors
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 890d4026-9629-4ebe-bc85-664194abe89c
+		sourceLineageTag: F16_LocalInvestors
+		summarizeBy: sum
+		sourceColumn: F16_LocalInvestors
+
+		annotation SummarizationSetBy = Automatic
+
+	column F17_MultipleHomesteadExemptions
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 2dfe6a6f-af82-43a4-8e33-d260bf9bf58f
+		sourceLineageTag: F17_MultipleHomesteadExemptions
+		summarizeBy: sum
+		sourceColumn: F17_MultipleHomesteadExemptions
+
+		annotation SummarizationSetBy = Automatic
+
+	column F18_OwnerOccupied
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ac38fd30-a1ee-4d46-8fea-23694f00ffa9
+		sourceLineageTag: F18_OwnerOccupied
+		summarizeBy: sum
+		sourceColumn: F18_OwnerOccupied
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaggyLabel
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: e0673c6e-2d03-4c0c-abe1-a054e1f89475
+		sourceLineageTag: MaggyLabel
+		summarizeBy: none
+		sourceColumn: MaggyLabel
+
+		annotation SummarizationSetBy = Automatic
+
+	column F19_DollarTransfers
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e00e80da-266d-4cb9-adaa-6ee94fe56b12
+		sourceLineageTag: F19_DollarTransfers
+		summarizeBy: sum
+		sourceColumn: F19_DollarTransfers
+
+		annotation SummarizationSetBy = Automatic
+
+	partition philly_flattened_properties-1caa1923-e18b-41b0-ad53-8931434981a8 = entity
+		mode: directLake
+		source
+			entityName: philly_flattened_properties
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

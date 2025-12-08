@@ -1,0 +1,33 @@
+table masteraddress
+	lineageTag: 2975f5de-7f51-4188-9143-b3a81adc5597
+	sourceLineageTag: [dbo].[masteraddress]
+
+	column MasterAddressID
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 4f7729a5-96b1-4559-a7f4-7de66366b6d9
+		sourceLineageTag: MasterAddressID
+		summarizeBy: none
+		sourceColumn: MasterAddressID
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressText
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: fdd83f61-f65c-4385-bd47-99ba12b67d27
+		sourceLineageTag: AddressText
+		summarizeBy: none
+		sourceColumn: AddressText
+
+		annotation SummarizationSetBy = Automatic
+
+	partition masteraddress-71120634-3426-41a6-b313-9b416b7202ff = entity
+		mode: directLake
+		source
+			entityName: masteraddress
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

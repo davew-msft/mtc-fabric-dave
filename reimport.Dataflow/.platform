@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "reimport"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "045b97c7-7e68-a675-4756-1d7898ed2ff6"
+  }
+}

@@ -1,0 +1,33 @@
+table philly_problempropertylist
+	lineageTag: 1238ed20-345b-4445-af99-c0aa31524d21
+	sourceLineageTag: [dbo].[philly_problempropertylist]
+
+	column location
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: f7b70ceb-2480-4ffe-9610-dd1e2fafca9a
+		sourceLineageTag: location
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaggyReason
+		dataType: string
+		sourceProviderType: varchar
+		lineageTag: 8d14f5bb-6b65-4f00-994b-d34e56eadca5
+		sourceLineageTag: MaggyReason
+		summarizeBy: none
+		sourceColumn: MaggyReason
+
+		annotation SummarizationSetBy = Automatic
+
+	partition philly_problempropertylist-57b83e94-22d6-4376-b94b-0da1962d3ced = entity
+		mode: directLake
+		source
+			entityName: philly_problempropertylist
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation IsTableInBiModel = True
+

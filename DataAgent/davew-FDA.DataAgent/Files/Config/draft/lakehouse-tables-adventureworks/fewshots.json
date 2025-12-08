@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/fewShots/1.0.0/schema.json",
+  "fewShots": [
+    {
+      "id": "61459afc-3b87-4a1a-8ecc-bd2c0eae9d73",
+      "question": "how many active customers did we have June 1st, 2010?",
+      "query": "SELECT COUNT(DISTINCT fis.CustomerKey) AS ActiveCustomerCount FROM factinternetsales fis JOIN dimdate dd ON fis.OrderDateKey = dd.DateKey WHERE dd.FullDateAlternateKey BETWEEN DATEADD(MONTH, -6, '2010-06-01') AND '2010-06-01' GROUP BY fis.CustomerKey HAVING COUNT(fis.SalesOrderNumber) >= 2;"
+    },
+    {
+      "id": "39cb4726-0dd7-47b2-8edf-609c421874cb",
+      "question": "which promotion was the most impactful?",
+      "query": "SELECT dp.EnglishPromotionName, SUM(fis.SalesAmount) AS PromotionRevenue FROM factinternetsales fis JOIN dimpromotion dp ON fis.PromotionKey = dp.PromotionKey GROUP BY dp.EnglishPromotionName ORDER BY PromotionRevenue DESC;"
+    },
+    {
+      "id": "09f93524-8813-43ae-9a5d-5ba10acc7f11",
+      "question": "who are the top 5 customers by total sales amount?",
+      "query": "SELECT TOP 5 CONCAT(dc.FirstName, ' ', dc.LastName) AS CustomerName, SUM(fis.SalesAmount) AS TotalSpent FROM factinternetsales fis JOIN dimcustomer dc ON fis.CustomerKey = dc.CustomerKey GROUP BY CONCAT(dc.FirstName, ' ', dc.LastName) ORDER BY TotalSpent DESC;"
+    },
+    {
+      "id": "3f8e682c-fbb0-4130-b2d4-5980ab5a9e58",
+      "question": "what is the total sales amount by year?",
+      "query": "SELECT dd.CalendarYear, SUM(fis.SalesAmount) AS TotalSales FROM factinternetsales fis JOIN dimdate dd ON fis.OrderDateKey = dd.DateKey GROUP BY dd.CalendarYear ORDER BY dd.CalendarYear;"
+    },
+    {
+      "id": "0bf71bfd-7f9d-4d4f-8652-805a55029bd7",
+      "question": "which product category generated the highest revenue?",
+      "query": "SELECT dpc.EnglishProductCategoryName, SUM(fis.SalesAmount) AS CategoryRevenue FROM factinternetsales fis JOIN dimproduct dp ON fis.ProductKey = dp.ProductKey JOIN dimproductcategory dpc ON dp.ProductSubcategoryKey = dpc.ProductCategoryKey GROUP BY dpc.EnglishProductCategoryName ORDER BY CategoryRevenue DESC;"
+    },
+    {
+      "id": "afad13fb-f1c4-4494-a87d-7214e533c7d4",
+      "question": "what is the average sales amount per order by territory?",
+      "query": "SELECT dst.SalesTerritoryRegion, AVG(fis.SalesAmount) AS AvgOrderValue FROM factinternetsales fis JOIN dimsalesterritory dst ON fis.SalesTerritoryKey = dst.SalesTerritoryKey GROUP BY dst.SalesTerritoryRegion ORDER BY AvgOrderValue DESC;"
+    },
+    {
+      "id": "0aa246f6-a98e-4ce4-8913-4ad242896260",
+      "question": "what is the total sales amount by currency?",
+      "query": "SELECT dc.CurrencyName, SUM(fis.SalesAmount) AS TotalSales FROM factinternetsales fis JOIN dimcurrency dc ON fis.CurrencyKey = dc.CurrencyKey GROUP BY dc.CurrencyName ORDER BY TotalSales DESC;"
+    },
+    {
+      "id": "74f5a7af-d5ad-44a2-bae8-483cf6cc10cb",
+      "question": "which product had the highest sales revenue last year?",
+      "query": "SELECT dp.EnglishProductName, SUM(fis.SalesAmount) AS TotalRevenue FROM factinternetsales fis JOIN dimproduct dp ON fis.ProductKey = dp.ProductKey JOIN dimdate dd ON fis.ShipDateKey = dd.DateKey WHERE dd.CalendarYear = YEAR(GETDATE()) - 1 GROUP BY dp.EnglishProductName ORDER BY TotalRevenue DESC;"
+    },
+    {
+      "id": "ce7987a6-09fb-456e-bcac-83bd98394ada",
+      "question": "what are the monthly sales trends for the last year?",
+      "query": "SELECT dd.CalendarYear, dd.MonthNumberOfYear, SUM(fis.SalesAmount) AS TotalSales FROM factinternetsales fis JOIN dimdate dd ON fis.ShipDateKey = dd.DateKey WHERE dd.CalendarYear = YEAR(GETDATE()) - 1 GROUP BY dd.CalendarYear, dd.MonthNumberOfYear ORDER BY dd.CalendarYear, dd.MonthNumberOfYear;"
+    },
+    {
+      "id": "fb83e3c0-173e-4e6c-94ac-4d7df6afa9ec",
+      "question": "how did the latest promotion affect sales revenue?",
+      "query": "SELECT dp.EnglishPromotionName, SUM(fis.SalesAmount) AS PromotionRevenue FROM factinternetsales fis JOIN dimpromotion dp ON fis.PromotionKey = dp.PromotionKey WHERE dp.StartDate >= DATEADD(MONTH, 0, GETDATE()) GROUP BY dp.EnglishPromotionName ORDER BY PromotionRevenue DESC;"
+    },
+    {
+      "id": "7a7bfa8e-f450-4c78-aaa8-2eed9f8a8f0b",
+      "question": "which territory had the highest sales revenue?",
+      "query": "SELECT dst.SalesTerritoryRegion, SUM(fis.SalesAmount) AS TotalSales FROM factinternetsales fis JOIN dimsalesterritory dst ON fis.SalesTerritoryKey = dst.SalesTerritoryKey GROUP BY dst.SalesTerritoryRegion ORDER BY TotalSales DESC;"
+    },
+    {
+      "id": "b154cf47-85bf-49a5-9a8b-68d681f4c7cb",
+      "question": "who are the top 5 resellers by total sales amount?",
+      "query": "SELECT TOP 5 dr.ResellerName, SUM(frs.SalesAmount) AS TotalSales FROM factresellersales frs JOIN dimreseller dr ON frs.ResellerKey = dr.ResellerKey GROUP BY dr.ResellerName ORDER BY TotalSales DESC;"
+    },
+    {
+      "id": "04b2eb61-a8f2-451f-a693-e859d97e890a",
+      "question": "what is the total sales amount by customer region?",
+      "query": "SELECT dg.EnglishCountryRegionName, SUM(fis.SalesAmount) AS TotalSales FROM factinternetsales fis JOIN dimcustomer dc ON fis.CustomerKey = dc.CustomerKey JOIN dimgeography dg ON dc.GeographyKey = dg.GeographyKey GROUP BY dg.EnglishCountryRegionName ORDER BY TotalSales DESC;"
+    },
+    {
+      "id": "33d3f9be-58b3-45e5-9a38-85992068e365",
+      "question": "which product category had the highest average sales price?",
+      "query": "SELECT dpc.EnglishProductCategoryName, AVG(fis.UnitPrice) AS AvgPrice FROM factinternetsales fis JOIN dimproduct dp ON fis.ProductKey = dp.ProductKey JOIN dimproductcategory dpc ON dp.ProductSubcategoryKey = dpc.ProductCategoryKey GROUP BY dpc.EnglishProductCategoryName ORDER BY AvgPrice DESC;"
+    }
+  ]
+}

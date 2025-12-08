@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "snowflake"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "872aadc1-f443-b5e3-4750-887aa779b29a"
+  }
+}
