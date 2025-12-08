@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "VibeAnalytics/GuidedAnalytics",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ae6041f8-8964-af2e-4a25-9aaa929bf57a"
+  }
+}
