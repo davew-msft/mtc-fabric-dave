@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "DataPipeline",
-    "displayName": "pipeline3"
+    "type": "Lakehouse",
+    "displayName": "VibeAnalytics"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "caa61bb5-66db-85b7-4786-db799c9fbdfd"
+    "logicalId": "fd0b2046-1f88-81a8-4bc8-b7197bd5bf37"
   }
 }
