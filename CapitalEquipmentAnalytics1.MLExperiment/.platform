@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MLExperiment",
+    "displayName": "CapitalEquipmentAnalytics1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "551105bc-4daa-9003-4fb2-a12a3f084263"
+  }
+}
